@@ -8,8 +8,9 @@ type NavBrandLinkType = {
 const NavBrandLink = ({ url }: NavBrandLinkType) => {
   return (
     <Link href={url}>
+      <span className="lg:hidden">Wildlife Wizards</span>
       <Image
-        className="h-fit w-fit"
+        className="hidden h-fit w-fit lg:block"
         src="/ww_company_name.png"
         width={128}
         height={64}

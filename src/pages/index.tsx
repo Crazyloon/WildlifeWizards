@@ -5,8 +5,13 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 
 import { api } from "../utils/api";
-import Navigation from "../components/navigation/navigation";
+import Navigation from "../components/navigation/nav-bar";
 import { useState } from "react";
+import TelephoneButton from "../components/button/TelephoneButton";
+import OneByThree from "../components/structural/one-by-three";
+import CallToAction from "../components/call-to-action/CallToAction";
+import Hero from "../components/call-to-action/Hero";
+import FrequentlyAsked from "../components/faq";
 
 const Home: NextPage = () => {
   return (
@@ -19,30 +24,19 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="fixed top-0 z-50 h-[70px] w-full bg-neutral-800 text-white">
-        <Navigation />
-      </header>
-      <div className="flex flex-col items-center justify-center bg-gradient-to-br from-[#9d15d8] to-[#5f00a9]">
-        <Image
-          src="/ww_hero.png"
-          alt="Hero banner showing Wildlife Wizards logo"
-          width={960}
-          height={540}
-        />
-      </div>
-      <main className="bg-slate-800 text-gray-200">
-        <section className="flex flex-col items-center gap-2 py-12">
-          <h1>Animal and Pest Control</h1>
-          <i className="text-lg text-zinc-400">
-            Making pests disappear, like magic!
-          </i>
-          <a
-            href="tel:+12533139926"
-            className="mt-4 block w-fit rounded-sm border border-purple-700 bg-purple-700 px-8 py-4 font-bold capitalize text-white"
-          >
-            Call or text today
-          </a>
-        </section>
+      <Hero />
+      <main className="text-gray-200">
+        <CallToAction
+          heading="Animal and Pest Control"
+          slogan="Making pests disappear, like magic!"
+        >
+          <TelephoneButton />
+          <h5 className="mt-4 text-zinc-300">
+            Now serving the Greater Puget Sound area
+          </h5>
+        </CallToAction>
+        <OneByThree />
+        <FrequentlyAsked />
       </main>
     </>
   );

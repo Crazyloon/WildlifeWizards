@@ -46,13 +46,6 @@ const ThemeSwitch = ({ display }: { display: boolean }) => {
         ) : (
           <FontAwesomeIcon icon={faSun} className="w-5 text-yellow-300" />
         )}
-        {/* <span
-          className={`text-link-text ml-3 font-bold ${
-            display ? "inline-block" : "hidden"
-          }`}
-        >
-          {darkTheme ? "Light Mode" : "Dark Mode"}
-        </span> */}
       </div>
     </i>
   );

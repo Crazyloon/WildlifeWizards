@@ -1,15 +1,26 @@
+import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
-const NavToggle = ({ isOpen, setMenuOpen, icon }) => {
-  const ref = useRef(null); // reference to the nav-toggle
+type NavToggleType = {
+  isOpen: boolean;
+  setMenuOpen: (isOpen: boolean | (() => boolean)) => void;
+  icon: IconProp;
+};
+
+const NavToggle = ({ isOpen, setMenuOpen, icon }: NavToggleType) => {
+  const ref = useRef<HTMLDivElement>(null); // reference to the nav-toggle
 
   useEffect(() => {
-    function handleClick(event) {
+    function handleClick(event: MouseEvent) {
       // make sure the event.target is not fired from the dropdown toggle
       // to avoid calling setMenuOpen twice
-      if (isOpen && !ref.current?.contains(event.target)) {
-        setMenuOpen(false);
+      if (
+        isOpen &&
+        event.button !== 2 &&
+        !ref.current?.contains(event.target as Node)
+      ) {
+        setMenuOpen(() => false);
       }
     }
     // listen to the mouseup event and unregister it when the useEffect is cleaned up
@@ -17,12 +28,12 @@ const NavToggle = ({ isOpen, setMenuOpen, icon }) => {
     return () => {
       document.removeEventListener("mouseup", handleClick);
     };
-  }, [isOpen]);
+  }, [isOpen, setMenuOpen]);
 
   return (
-    <li
+    <div
       ref={ref}
-      className={`align-center absolute top-0 right-0 float-right m-0 block cursor-pointer justify-center bg-navbar text-xl text-link-text transition-colors hover:bg-secondary-hover ${
+      className={`align-center text-link-text cursor-pointer justify-center text-xl ${
         isOpen ? "float-none text-left" : "lg:hidden"
       }`}
       onClick={() => setMenuOpen(!isOpen)}
@@ -30,7 +41,7 @@ const NavToggle = ({ isOpen, setMenuOpen, icon }) => {
       <div className="flex h-9 items-center px-3">
         <FontAwesomeIcon icon={icon} className="h-5 w-5" />
       </div>
-    </li>
+    </div>
   );
 };
 

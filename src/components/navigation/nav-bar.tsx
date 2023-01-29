@@ -1,81 +1,67 @@
-import React, { useState } from "react";
-import {
-  faHome,
-  faTh,
-  faBlog,
-  faBars,
-  faVideo,
-  faBowlFood,
-} from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faUser } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 import ThemeSwitch from "./theme-switch";
-import { useRouter } from "next/router";
-import NavToggle from "./nav-toggle";
-import NavLink from "./nav-link";
 import NavBrandLink from "./nav-brand-link";
+import { useRouter } from "next/router";
+import NavLink from "./nav-link";
+import NavToggle from "./nav-toggle";
+import NavMenuFlyout from "./nav-menu-flyout";
 
-const NavBar = () => {
+const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
 
   return (
-    <nav className={`bg-navbar fixed top-0 z-50 w-full`}>
-      <div
-        className={`mx-auto max-w-5xl ${
-          menuOpen ? "" : "flex justify-between"
-        }`}
-      >
-        <NavBrandLink
-          active={router.pathname === "/"}
-          url="/"
-          text="Home"
-          icon={faHome}
-          display={menuOpen}
-        />
+    <>
+      <nav className="m-auto flex h-full max-w-[1800px] items-center justify-between lg:px-4">
+        <div className="flex h-full w-0 max-w-xs grow items-center justify-start px-2 lg:px-0">
+          <NavBrandLink url="/" />
+        </div>
         <ul
-          className={`relative m-0 list-none overflow-hidden ${
-            menuOpen ? "overflow-visible" : ""
+          className={`hidden h-full max-w-3xl grow justify-between px-8 lg:flex xl:px-4 ${
+            menuOpen ? "flex overflow-visible" : ""
           }`}
         >
+          <NavLink url="/" text="home" active={router.pathname === "/"} />
           <NavLink
-            active={router.pathname.includes("/blog")}
-            url="/blog"
-            text="Blog"
-            icon={faBlog}
-            display={menuOpen}
+            url="/services"
+            text="services"
+            active={router.pathname === "/services"}
           />
           <NavLink
-            active={router.pathname.includes("/vlog")}
-            url="/vlog"
-            text="Videos"
-            icon={faVideo}
-            display={menuOpen}
+            url="/common-nuisance-wildlife"
+            text="common nuisance wildlife"
+            active={router.pathname === "/common-nuisance-wildlife"}
           />
           <NavLink
-            active={router.pathname.includes("/gallery")}
-            url="/gallery"
-            text="Gallery"
-            icon={faTh}
-            display={menuOpen}
+            url="/contact"
+            text="contact"
+            active={router.pathname === "/contact"}
           />
           <NavLink
-            active={router.pathname.includes("/recipes")}
-            url="/recipes"
-            text="Recipes"
-            icon={faBowlFood}
-            display={menuOpen}
+            url="/estimates"
+            text="estimates"
+            active={router.pathname === "/estimates"}
           />
         </ul>
-        <div>
-          <ThemeSwitch display={menuOpen} />
+        <div className="flex h-full w-0 max-w-xs shrink grow basis-0 items-center justify-end gap-4 px-2 lg:px-0">
+          <Link className="hidden lg:block" href="/login">
+            Login
+          </Link>
+          <ThemeSwitch display={menuOpen ? true : true} />
           <NavToggle
             isOpen={menuOpen}
             setMenuOpen={setMenuOpen}
             icon={faBars}
           />
         </div>
-      </div>
-    </nav>
+      </nav>
+      <NavMenuFlyout isOpen={menuOpen} currentRoute={router.pathname} />
+    </>
   );
 };
 
-export default NavBar;
+export default Navigation;
