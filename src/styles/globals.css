@@ -13,7 +13,7 @@
 
   --white: 0 0% 96%;
   /* --white: hsl(0, 0%, 96%); */
-  --black: hsl(220, 7%, 8%);
+  --black: 220 7% 8%;
 
   --font-primary: hsl(221, 16%, 23%);
   --font-secondary: hsl(211, 50%, 27%);
@@ -28,11 +28,11 @@
 
   --link-text: var(--white);
 
-  --primary: hsl(228, 46%, 37%);
-  --primary-hover: hsl(228, 50%, 40%);
-  --primary-focus: hsl(228, 54%, 43%);
-  --primary-active: hsl(228, 58%, 46%);
-  --primary-after: hsl(228, 46%, 49%);
+  --primary: 228 46% 37%;
+  --primary-hover: 228 50% 40%;
+  --primary-focus: 228 54% 43%;
+  --primary-active: 228 58% 46%;
+  --primary-after: 228 46% 49%;
   --primary-faded: hsla(228, 46%, 49%, 0.7);
 
   --primary-dark: hsl(275, 50%, 20%);
@@ -93,19 +93,19 @@
 
   --shadow: #b5b5b54d;
 
-  --primary: hsl(277, 35%, 51%);
-  --primary-hover: hsl(277, 43%, 47%);
-  --primary-focus: hsl(277, 54%, 44%);
-  --primary-active: hsl(277, 67%, 40%);
-  --primary-after: hsla(278, 83%, 36%, 0.702);
-  --primary-faded: hsla(277, 67%, 40%, 0.702);
+  --primary: 277 35% 51%;
+  --primary-hover: 277 43% 47%;
+  --primary-focus: 277 54% 44%;
+  --primary-active: 277 67% 40%;
+  --primary-after: 278 83% 36%;
+  --primary-faded: 277 67% 40%;
 
   --primary-dark: hsl(275, 50%, 20%);
   --primary-dark-hover: hsl(275, 55%, 22%);
   --primary-dark-focus: hsl(275, 60%, 24%);
   --primary-dark-active: hsl(275, 75%, 26%);
 
-  --secondary: hsl(189, 100%, 26%);
+  --secondary: hsl(189, 100%, 21%);
   --secondary-hover: hsl(189, 100%, 28%);
   --secondary-focus: hsl(189, 90%, 30%);
   --secondary-active: hsl(189, 80%, 32%);

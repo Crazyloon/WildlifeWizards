@@ -6,9 +6,7 @@ module.exports = {
     extend: {
       colors: {
         white: "hsl(var(--white) / <alpha-value>)",
-        black: "var(--black)",
-        primary: "var(--primary)",
-        "primary-hover": "var(--primary-hover)",
+        black: "hsl(var(--black) / <alpha-value>)",
         "font-primary": "var(--font-primary)",
         "font-secondary": "var(--font-secondary)",
         shadow: "var(--shadow)",
@@ -23,11 +21,12 @@ module.exports = {
         "link-color-visited": "var(--link-color-visited)",
         "link-text": "var(--white)",
 
-        "primary-hover": "var(--primary-hover)",
-        "primary-focus": "var(--primary-focus)",
-        "primary-active": "var(--primary-active)",
-        "primary-after": "var(--primary-after)",
-        "primary-faded": "var(--primary-faded)",
+        primary: "hsl(var(--primary) / <alpha-value>)",
+        "primary-hover": "hsl(var(--primary-hover) / <alpha-value>)",
+        "primary-focus": "hsl(var(--primary-focus) / <alpha-value>)",
+        "primary-active": "hsl(var(--primary-active) / <alpha-value>)",
+        "primary-after": "hsl(var(--primary-after) / <alpha-value>)",
+        "primary-faded": "hsl(var(--primary-faded) / <alpha-value>)",
 
         "primary-dark": "var(--primary-dark)",
         "primary-dark-hover": "var(--primary-dark-hover)",

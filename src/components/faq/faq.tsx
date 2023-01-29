@@ -5,11 +5,11 @@ import React, { type PropsWithChildren } from "react";
 
 const FrequentlyAsked = () => {
   return (
-    <section className="flex flex-col items-center justify-center bg-zinc-800 py-12">
+    <section className="flex flex-col items-center justify-center bg-primary py-12 dark:bg-primary-dark">
       <h2 className="mb-2 text-center text-3xl text-white sm:text-4xl">
         Frequently Asked Questions
       </h2>
-      <span className="mb-8 text-center text-gray-400">
+      <span className="mb-8 text-center text-gray-300 dark:text-gray-400">
         Reach out to us if you have a question not seen here
       </span>
       <Accordion.Root
@@ -56,7 +56,7 @@ type AccordionTriggerType = Pick<Accordion.AccordionTriggerProps, "children">;
 
 const AccordionTrigger: React.FC<AccordionTriggerType> = ({ children }) => {
   return (
-    <Accordion.Header className="bg-stone-500 text-gray-100">
+    <Accordion.Header className="bg-black/20 text-gray-100 dark:bg-purple-300/30">
       <Accordion.Trigger
         className={
           "group flex w-full items-center justify-between gap-4 p-4 text-left"
@@ -75,7 +75,7 @@ const AccordionTrigger: React.FC<AccordionTriggerType> = ({ children }) => {
 
 const AccordionContent: React.FC<PropsWithChildren> = ({ children }) => {
   return (
-    <Accordion.Content className="AccordionContent bg-stone-600 pr-8 pl-4 text-zinc-300">
+    <Accordion.Content className="AccordionContent pr-8 pl-4 text-zinc-300 dark:bg-purple-400/10">
       <div className="pt-2 pb-4">{children}</div>
     </Accordion.Content>
   );

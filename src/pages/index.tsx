@@ -5,7 +5,7 @@ import TelephoneButton from "../components/button/TelephoneButton";
 import OneByThree from "../components/structural/one-by-three";
 import CallToAction from "../components/call-to-action/CallToAction";
 import Hero from "../components/call-to-action/Hero";
-import FrequentlyAsked from "../components/faq";
+import FrequentlyAsked from "../components/faq/faq";
 
 const Home: NextPage = () => {
   return (
