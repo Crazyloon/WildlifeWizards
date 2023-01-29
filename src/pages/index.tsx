@@ -25,12 +25,18 @@ const Home: NextPage = () => {
           content="Making Pests Disappear, Like Magic!"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/ww_raccoon_wizard_home.png" />
+        <meta
+          property="og:image"
+          content="https://img1.wsimg.com/isteam/ip/dcd98dc2-25a7-44f7-baac-85dd6419b2b0/Untitled_Artwork%204.jpg"
+        />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Wildlife Wizards" />
         <meta name="twitter:description" content="Animal and Pest Control " />
-        <meta name="twitter:image" content="/ww_raccoon_wizard_home.png" />
+        <meta
+          name="twitter:image"
+          content="https://img1.wsimg.com/isteam/ip/dcd98dc2-25a7-44f7-baac-85dd6419b2b0/Untitled_Artwork%204.jpg"
+        />
         <meta name="twitter:image:alt" content="Wildlife Wizards" />
         <meta name="theme-color" content="#212730" />
         <meta
