@@ -5,7 +5,7 @@ import React, { type PropsWithChildren } from "react";
 
 const FrequentlyAsked = () => {
   return (
-    <section className="flex flex-col items-center justify-center bg-primary py-12 dark:bg-zinc-800">
+    <section className="flex flex-col items-center justify-center bg-primary py-12 dark:bg-background">
       <h2 className="mb-2 text-center text-3xl text-white sm:text-4xl">
         Frequently Asked Questions
       </h2>
@@ -16,7 +16,7 @@ const FrequentlyAsked = () => {
         type="single"
         defaultValue="q-1"
         collapsible
-        className="w-full max-w-4xl rounded-md sm:px-12 lg:w-3/4 [&>:not(:first-child)]:border-t"
+        className="w-full max-w-4xl rounded-md sm:px-12 lg:w-3/4 [&>:not(:first-child)]:border-t [&>:last-child>div]:border-b"
       >
         <Accordion.Item value="q-1">
           <AccordionTrigger>Which animals do you handle?</AccordionTrigger>

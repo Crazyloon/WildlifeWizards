@@ -4,6 +4,32 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        bounceRight: {
+          "0%, 100%": {
+            transform: "translateX(0)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateX(25%)",
+            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
+        bounceLeft: {
+          "0%, 100%": {
+            transform: "translateX(0)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateX(-25%)",
+            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
+      },
+      animation: {
+        bounceRight: "bounceRight 1s infinite",
+        bounceLeft: "bounceLeft 1s infinite",
+      },
       colors: {
         white: "hsl(var(--white) / <alpha-value>)",
         black: "hsl(var(--black) / <alpha-value>)",

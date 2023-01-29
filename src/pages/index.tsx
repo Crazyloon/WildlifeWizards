@@ -11,11 +11,36 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Animal Control - Wildlife Wizards</title>
+        <title>Wildlife Wizards - Animal Control</title>
         <meta
           name="description"
-          content="Wildlife removal and exclusion services"
+          content="Licensed and Experienced Nuisance Wildlife Control Operator. We offer nuisance animal control, home inspections and exclusion, animal trapping and removal, and pesticide applications"
         />
+        <meta name="author" content="Wildlife Wizards" />
+        <meta property="og:url" content="https://wildlifewizards.com/" />
+        <meta property="og:site_name" content="Wildlife Wizards" />
+        <meta property="og:title" content="Wildlife Wizards" />
+        <meta
+          property="og:description"
+          content="Making Pests Disappear, Like Magic!"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/ww_raccoon_wizard_home.png" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Wildlife Wizards" />
+        <meta name="twitter:description" content="Animal and Pest Control " />
+        <meta name="twitter:image" content="/ww_raccoon_wizard_home.png" />
+        <meta name="twitter:image:alt" content="Wildlife Wizards" />
+        <meta name="theme-color" content="#212730" />
+        <meta
+          name="google-site-verification"
+          content="f9bbrNtkypRloh30QrxdFKbY4eHtYs3Q3Pti5HwLkEw"
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
