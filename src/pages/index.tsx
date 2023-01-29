@@ -19,13 +19,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <main className="text-gray-200">
+      <main className="text-slate-800 dark:text-gray-200">
         <CallToAction
           heading="Animal and Pest Control"
           slogan="Making pests disappear, like magic!"
         >
           <TelephoneButton />
-          <h5 className="mt-4 text-zinc-300">
+          <h5 className="mt-4 text-zinc-700 dark:text-zinc-300">
             Now serving the Greater Puget Sound area
           </h5>
         </CallToAction>

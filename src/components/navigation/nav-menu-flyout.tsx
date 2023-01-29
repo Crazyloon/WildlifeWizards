@@ -8,7 +8,7 @@ type NavMenuFlyoutType = {
 const NavMenuFlyout = ({ isOpen, currentRoute }: NavMenuFlyoutType) => {
   return (
     <ul
-      className={`absolute right-0 flex-col justify-between bg-neutral-800 ${
+      className={`absolute right-0 flex-col justify-between bg-white/90 text-slate-900 dark:bg-neutral-800/90 dark:text-white ${
         isOpen ? "flex" : "hidden"
       }`}
     >

@@ -6,7 +6,7 @@ import React, { type PropsWithChildren } from "react";
 const FrequentlyAsked = () => {
   return (
     <section className="flex flex-col items-center justify-center bg-zinc-800 py-12">
-      <h2 className="mb-2 text-center text-3xl sm:text-4xl">
+      <h2 className="mb-2 text-center text-3xl text-white sm:text-4xl">
         Frequently Asked Questions
       </h2>
       <span className="mb-8 text-center text-gray-400">

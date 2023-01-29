@@ -2,6 +2,147 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --xs: 575px; /* Max container width None (auto) */
+  --sm: 576px; /* Max container width 540px */
+  --md: 768px; /* Max container width 720px */
+  --lg: 992px; /* Max container width 960px */
+  --xl: 1200px; /* Max container width 1140px */
+
+  --shadow: #5c5c5c4d;
+
+  --white: 0 0% 96%;
+  /* --white: hsl(0, 0%, 96%); */
+  --black: hsl(220, 7%, 8%);
+
+  --font-primary: hsl(221, 16%, 23%);
+  --font-secondary: hsl(211, 50%, 27%);
+  --background: hsl(69, 20%, 93%); /* traffic white */
+
+  --navbar: 277 31% 35%;
+
+  --link-color: hsl(45, 100%, 42%);
+  --link-color-hover: hsl(211, 80%, 16%);
+  --link-color-active: hsl(204, 3%, 70%);
+  --link-color-visited: hsl(214, 42%, 48%);
+
+  --link-text: var(--white);
+
+  --primary: hsl(228, 46%, 37%);
+  --primary-hover: hsl(228, 50%, 40%);
+  --primary-focus: hsl(228, 54%, 43%);
+  --primary-active: hsl(228, 58%, 46%);
+  --primary-after: hsl(228, 46%, 49%);
+  --primary-faded: hsla(228, 46%, 49%, 0.7);
+
+  --primary-dark: hsl(275, 50%, 20%);
+  --primary-dark-hover: hsl(275, 55%, 22%);
+  --primary-dark-focus: hsl(275, 60%, 24%);
+  --primary-dark-active: hsl(275, 75%, 26%);
+
+  --secondary: hsl(211, 80%, 16%);
+  --secondary-hover: hsl(211, 80%, 16%);
+  --secondary-focus: hsl(211, 80%, 16%);
+  --secondary-active: hsl(211, 80%, 16%);
+  --secondary-faded: hsla(211, 80%, 16%, 0.2);
+
+  --secondary-dark: hsl(180, 50%, 18%);
+  --secondary-dark-hover: hsl(180, 53%, 19%);
+  --secondary-dark-focus: hsl(180, 55%, 20%);
+  --secondary-dark-active: hsl(180, 56%, 21%);
+
+  --accent: hsl(141, 60%, 25%);
+  --accent-hover: hsl(141, 70%, 28%);
+  --accent-focus: hsl(141, 80%, 31%);
+  --accent-active: hsl(141, 80%, 34%);
+  --accent-faded: hsl(141, 60%, 25%, 0.2);
+
+  --success: hsl(111 40% 30%);
+  --success-hover: hsl(111, 42%, 32%);
+  --success-focus: hsl(111, 44%, 34%);
+  --success-active: hsl(111, 46%, 36%);
+
+  --info: hsl(214, 55%, 58%);
+  --info-hover: hsl(214, 60%, 54%);
+  --info-focus: hsl(214, 65%, 52%);
+  --info-active: hsl(214, 70%, 48%);
+
+  --warning: hsl(28, 65%, 58%);
+  --warning-hover: hsl(28, 70%, 56%);
+  --warning-focus: hsl(28, 75%, 54%);
+  --warning-active: hsl(28, 80%, 52%);
+
+  --error: hsl(0, 74%, 60%);
+  --error-hover: hsl(0, 76%, 58%);
+  --error-focus: hsl(0, 78%, 56%);
+  --error-active: hsl(0, 80%, 54%);
+}
+
+[data-theme="dark"] {
+  --font-primary: hsl(230, 20%, 80%);
+  --font-secondary: hsl(214, 28%, 66%);
+
+  --background: hsl(216, 18%, 16%);
+  --navbar: 217 10% 25%;
+
+  --link-color: hsl(290, 100%, 85%);
+  --link-color-hover: hsl(228, 100%, 85%);
+  --link-color-active: hsl(204, 3%, 70%);
+  /* --link-color-visited: #5F7695;*/
+  --link-text: var(--font-primary);
+
+  --shadow: #b5b5b54d;
+
+  --primary: hsl(277, 35%, 51%);
+  --primary-hover: hsl(277, 43%, 47%);
+  --primary-focus: hsl(277, 54%, 44%);
+  --primary-active: hsl(277, 67%, 40%);
+  --primary-after: hsla(278, 83%, 36%, 0.702);
+  --primary-faded: hsla(277, 67%, 40%, 0.702);
+
+  --primary-dark: hsl(275, 50%, 20%);
+  --primary-dark-hover: hsl(275, 55%, 22%);
+  --primary-dark-focus: hsl(275, 60%, 24%);
+  --primary-dark-active: hsl(275, 75%, 26%);
+
+  --secondary: hsl(189, 100%, 26%);
+  --secondary-hover: hsl(189, 100%, 28%);
+  --secondary-focus: hsl(189, 90%, 30%);
+  --secondary-active: hsl(189, 80%, 32%);
+  --secondary-faded: hsla(189, 70%, 26%, 0.2);
+
+  --secondary-dark: hsl(180, 50%, 18%);
+  --secondary-dark-hover: hsl(180, 53%, 19%);
+  --secondary-dark-focus: hsl(180, 55%, 20%);
+  --secondary-dark-active: hsl(180, 56%, 21%);
+
+  --accent: hsl(320, 50%, 50%);
+  --accent-hover: hsl(320, 60%, 52%);
+  --accent-focus: hsl(320, 70%, 54%);
+  --accent-active: hsl(320, 80%, 56%);
+  --accent-faded: hsl(320, 50%, 50%, 0.2);
+
+  --success: hsl(111 40% 30%);
+  --success-hover: hsl(111, 42%, 32%);
+  --success-focus: hsl(111, 44%, 34%);
+  --success-active: hsl(111, 46%, 36%);
+
+  --info: hsl(214, 55%, 58%);
+  --info-hover: hsl(214, 60%, 54%);
+  --info-focus: hsl(214, 65%, 52%);
+  --info-active: hsl(214, 70%, 48%);
+
+  --warning: hsl(28, 65%, 58%);
+  --warning-hover: hsl(28, 75%, 56%);
+  --warning-focus: hsl(28, 85%, 54%);
+  --warning-active: hsl(28, 95%, 52%);
+
+  --error: hsl(0, 75%, 60%);
+  --error-hover: hsl(0, 80%, 55%);
+  --error-focus: hsl(0, 85%, 50%);
+  --error-active: hsl(0, 90%, 45%);
+}
+
 @font-face {
   font-family: "Averta";
   src: url("/fonts/Averta-Regular.woff2") format("woff2");
@@ -43,10 +184,6 @@ body {
   font-family: "Averta", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-}
-
-a {
-  color: #ffffff;
 }
 
 a:hover {

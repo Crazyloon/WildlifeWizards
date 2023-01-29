@@ -44,7 +44,7 @@ const ThemeSwitch = ({ display }: { display: boolean }) => {
         {darkTheme ? (
           <FontAwesomeIcon icon={faMoon} className="w-5 text-yellow-600" />
         ) : (
-          <FontAwesomeIcon icon={faSun} className="w-5 text-yellow-300" />
+          <FontAwesomeIcon icon={faSun} className="w-5 text-amber-400" />
         )}
       </div>
     </i>

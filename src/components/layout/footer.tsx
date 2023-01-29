@@ -2,7 +2,7 @@ const Footer = () => {
   const date: number = new Date().getFullYear();
   return (
     <>
-      <section className="m-auto grid w-full max-w-3xl grid-cols-4 gap-8 px-2 py-12 text-gray-400 md:px-14">
+      <section className="m-auto grid w-full max-w-3xl grid-cols-4 gap-8 px-2 py-12 text-gray-800 dark:text-gray-400 md:px-14">
         <div className="flex flex-col">
           <h4 className="bold mb-2 underline underline-offset-2">Company</h4>
           <span className="text-sm">Careers</span>
