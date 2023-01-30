@@ -12,7 +12,7 @@ const NavBrandLink = ({ url }: NavBrandLinkType) => {
       className="flex items-center py-2 visited:text-link-color hover:text-link-color-hover dark:visited:text-link-color"
     >
       <Image
-        className="h-10 w-10 lg:h-14 lg:w-14"
+        className="h-[28px] w-[30px] lg:h-[45px] lg:w-[48px]"
         src="/ww_wizard_hat.png"
         width={64}
         height={64}
