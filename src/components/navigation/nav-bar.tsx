@@ -14,12 +14,12 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="m-auto flex h-full max-w-[1800px] items-center justify-between lg:px-4">
-        <div className="flex h-full w-0 max-w-xs grow items-center justify-start px-2 lg:px-0">
+      <nav className="m-auto grid h-full max-w-[1280px] grid-cols-5 items-center justify-between">
+        <div className="col-start-1 flex h-full w-full max-w-xs items-center justify-start px-2 lg:px-0">
           <NavBrandLink url="/" />
         </div>
         <ul
-          className={`hidden h-full max-w-3xl grow justify-between px-8 lg:flex xl:px-4 ${
+          className={`col-span-3 col-start-2 hidden h-full w-full justify-between px-2 lg:flex ${
             menuOpen ? "flex overflow-visible" : ""
           }`}
         >
@@ -45,7 +45,7 @@ const Navigation = () => {
             active={router.pathname === "/estimates"}
           />
         </ul>
-        <div className="flex h-full w-0 max-w-xs shrink grow basis-0 items-center justify-end gap-4 px-2 lg:px-0">
+        <div className="col-start-5 flex h-full w-full items-center justify-end gap-4 px-2 lg:px-0">
           <Link className="hidden lg:block" href="/login">
             Login
           </Link>

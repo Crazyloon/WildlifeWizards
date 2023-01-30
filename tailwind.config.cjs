@@ -25,8 +25,14 @@ module.exports = {
             "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
           },
         },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "50%": { transform: "rotate(-24deg)" },
+        },
       },
       animation: {
+        "spin-slow": "spin 3s linear infinite",
+        wiggle: "wiggle 2s ease-in-out infinite",
         bounceRight: "bounceRight 1s infinite",
         bounceLeft: "bounceLeft 1s infinite",
       },

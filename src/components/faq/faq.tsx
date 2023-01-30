@@ -46,8 +46,8 @@ const FrequentlyAsked = () => {
           </AccordionTrigger>
           <AccordionContent>
             We offer attic and crawlspace remediation, disinfecting, and
-            exclusion services. No need for multiple companies, having to call
-            around to get the best price. We got you covered
+            exclusion services. You won&apos;t need to call multiple companies,
+            searching for the best price. We&apos;ve got you covered.
           </AccordionContent>
         </Accordion.Item>
       </Accordion.Root>
@@ -63,13 +63,11 @@ const AccordionTrigger: React.FC<AccordionTriggerType> = ({ children }) => {
   return (
     <Accordion.Header className="bg-black/20 text-gray-100 dark:bg-purple-800/60">
       <Accordion.Trigger
-        className={
-          "group flex w-full items-center justify-between gap-4 p-4 text-left"
-        }
+        className={"group grid w-full grid-cols-12 items-center p-4"}
       >
-        {children}
+        <span className="col-span-11 col-start-1 text-left">{children}</span>
         <div
-          className={`flex h-5 w-5 items-center transition-transform duration-200 group-data-[state=open]:rotate-180`}
+          className={`h-5 w-5 justify-self-end transition-transform duration-200 group-data-[state=open]:rotate-180`}
         >
           <FontAwesomeIcon icon={faChevronDown} aria-hidden />
         </div>
@@ -80,7 +78,7 @@ const AccordionTrigger: React.FC<AccordionTriggerType> = ({ children }) => {
 
 const AccordionContent: React.FC<PropsWithChildren> = ({ children }) => {
   return (
-    <Accordion.Content className="AccordionContent pr-8 pl-4 text-zinc-300 dark:bg-purple-900/10">
+    <Accordion.Content className="AccordionContent px-4 text-zinc-300 dark:bg-purple-900/10">
       <div className="pt-2 pb-4">{children}</div>
     </Accordion.Content>
   );

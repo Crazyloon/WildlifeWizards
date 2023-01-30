@@ -42,9 +42,15 @@ const ThemeSwitch = ({ display }: { display: boolean }) => {
     >
       <div className="flex h-9 items-center px-3">
         {darkTheme ? (
-          <FontAwesomeIcon icon={faMoon} className="w-5 text-yellow-600" />
+          <FontAwesomeIcon
+            icon={faMoon}
+            className="w-5 text-yellow-600 hover:animate-wiggle"
+          />
         ) : (
-          <FontAwesomeIcon icon={faSun} className="w-5 text-amber-400" />
+          <FontAwesomeIcon
+            icon={faSun}
+            className="w-5 text-amber-400 duration-1000 hover:animate-spin-slow"
+          />
         )}
       </div>
     </i>

@@ -16,7 +16,7 @@ const NavLink = ({ url, text, active, className }: NavLinkType) => {
     >
       <Link
         href={url}
-        className={`flex h-full w-full items-center px-4 capitalize ${
+        className={`flex h-full w-full items-center whitespace-nowrap px-4 capitalize ${
           active
             ? "text-white visited:text-white hover:text-white focus:text-white hover:active:text-white dark:visited:text-white dark:hover:text-link-color-hover"
             : "dark:visited:text-link-color"

@@ -1,7 +1,9 @@
 const BusinessHours = () => {
   return (
     <>
-      <h2 className="text-center">Business Hours</h2>
+      <h2 className="mb-2 text-center text-3xl text-white sm:text-4xl">
+        Business Hours
+      </h2>
       <i className="text-lg text-gray-300">
         Honestly, feel free to call anytime before 10pm
       </i>

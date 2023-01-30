@@ -28,7 +28,7 @@ const Footer = () => {
           <span className="text-sm">Insurance</span>
         </div>
       </section>
-      <section className="pb-2 text-center text-sm capitalize text-gray-400">
+      <section className="mb-2 text-center text-sm capitalize text-gray-400">
         copyright © {date} wildlife wizards - all rights reserved
       </section>
     </>
