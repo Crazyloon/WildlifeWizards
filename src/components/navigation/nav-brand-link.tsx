@@ -7,7 +7,10 @@ type NavBrandLinkType = {
 
 const NavBrandLink = ({ url }: NavBrandLinkType) => {
   return (
-    <Link href={url} className="flex items-center py-2">
+    <Link
+      href={url}
+      className="flex items-center py-2 visited:text-link-color hover:text-link-color-hover dark:visited:text-link-color"
+    >
       <Image
         className="h-10 w-10 lg:h-14 lg:w-14"
         src="/ww_wizard_hat.png"

@@ -5,7 +5,7 @@ import Footer from "./footer";
 const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className="relative min-h-screen bg-background dark:text-font-primary">
-      <header className="sticky top-0 z-50 h-11 w-full bg-white/50 text-slate-900 backdrop-blur-md dark:bg-neutral-800/90 dark:text-white lg:h-[70px]">
+      <header className="sticky top-0 z-50 h-11 w-full text-slate-900 backdrop-blur-md dark:text-white lg:h-[70px]">
         <Navigation />
       </header>
       <div className="pb-60">{children}</div>

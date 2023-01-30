@@ -4,7 +4,7 @@
 
 const OneByThree = () => {
   return (
-    <section className="py-12 dark:bg-purple-900">
+    <>
       <h2 className="mb-8 text-center">Free of Pests in Three Easy Steps</h2>
       <div className="mx-8 max-w-7xl dark:bg-gray-500 sm:mx-20 md:mx-32 lg:mx-auto">
         <div className="m-auto grid gap-[1px] lg:grid-cols-3">
@@ -35,7 +35,7 @@ const OneByThree = () => {
           />
         </div>
       </div>
-    </section>
+    </>
   );
 };
 
@@ -43,7 +43,7 @@ export default OneByThree;
 
 const Step = ({ heading, content }: { heading: string; content: string }) => {
   return (
-    <div className="flex justify-center dark:bg-purple-900">
+    <div className="flex justify-center bg-gray-600">
       <div className="flex max-w-[500px] flex-col items-center p-6">
         <h3 className="mb-4 text-center">{heading}</h3>
         <p className="text-center">{content}</p>

@@ -1,11 +1,14 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/react";
-import TelephoneButton from "../components/button/TelephoneButton";
+import TelephoneButton from "../components/button/telephone-button";
 import OneByThree from "../components/structural/one-by-three";
-import CallToAction from "../components/call-to-action/CallToAction";
-import Hero from "../components/call-to-action/Hero";
+import CallToAction from "../components/call-to-action/call-to-action";
+import Hero from "../components/call-to-action/hero";
 import FrequentlyAsked from "../components/faq/faq";
+import Section from "../components/structural/section";
+import PhoneNumber from "../components/call-to-action/phone-number";
+import BusinessHours from "../components/structural/business-hours";
 
 const Home: NextPage = () => {
   return (
@@ -51,17 +54,27 @@ const Home: NextPage = () => {
       </Head>
       <Hero />
       <main className="text-slate-800 dark:text-gray-200">
-        <CallToAction
-          heading="Animal and Pest Control"
-          slogan="Making pests disappear, like magic!"
-        >
-          <TelephoneButton />
-          <h5 className="mt-4 text-zinc-700 dark:text-zinc-300">
-            Now serving the Greater Puget Sound area
-          </h5>
-        </CallToAction>
-        <OneByThree />
-        <FrequentlyAsked />
+        <Section className="flex flex-col items-center gap-2 py-12 dark:bg-slate-800">
+          <CallToAction
+            heading="Animal and Pest Control"
+            slogan="Making pests disappear, like magic!"
+          >
+            <TelephoneButton />
+            <PhoneNumber phoneNumber="(253) 313-9926" />
+            <h5 className="mt-4 text-zinc-700 dark:text-zinc-300">
+              Now serving the Greater Puget Sound area.
+            </h5>
+          </CallToAction>
+        </Section>
+        <Section className="flex flex-col bg-purple-800 text-center text-white">
+          <BusinessHours />
+        </Section>
+        <Section className="bg-gray-600 py-12 text-white">
+          <OneByThree />
+        </Section>
+        <Section className="flex flex-col items-center justify-center bg-primary dark:bg-background">
+          <FrequentlyAsked />
+        </Section>
       </main>
     </>
   );
