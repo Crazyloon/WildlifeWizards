@@ -10,7 +10,7 @@ export default function Custom404() {
       <span className="my-8 block text-center text-xl">
         We might have cast the wrong spell.
       </span>
-      <div className="relative m-auto aspect-[5/6] h-96 md:h-[600px] lg:h-[800px]">
+      <div className="relative m-auto aspect-[5/6] h-96 md:h-[600px] 2k:h-[800px]">
         <Image
           src="/ww_raccoon_wizard_home.png"
           alt="A cute raccoon wearing a purple wizard hat"

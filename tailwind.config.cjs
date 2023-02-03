@@ -4,6 +4,10 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "2k": "1921px",
+        "4k": "2561px",
+      },
       keyframes: {
         bounceRight: {
           "0%, 100%": {
