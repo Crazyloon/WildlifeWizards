@@ -9,10 +9,14 @@ import FrequentlyAsked from "../components/faq/faq";
 import Section from "../components/structural/section";
 import PhoneNumber from "../components/call-to-action/phone-number";
 import BusinessHours from "../components/structural/business-hours";
+import RequestServiceForm from "../components/form/request-service";
 
-const Home: NextPage = () => {
+const Estimates: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Estimates - Animal Control</title>
+      </Head>
       <Hero />
       <main className="text-slate-800 dark:text-gray-200">
         <Section className="flex flex-col items-center gap-2 py-12 dark:bg-slate-800">
@@ -27,21 +31,15 @@ const Home: NextPage = () => {
             </h5>
           </CallToAction>
         </Section>
-        <Section className="flex flex-col bg-purple-800 text-center text-white ">
-          <BusinessHours />
-        </Section>
-        <Section className="bg-gray-600 py-12 text-white">
-          <OneByThree />
-        </Section>
-        <Section className="flex flex-col items-center justify-center bg-primary dark:bg-background">
-          <FrequentlyAsked />
+        <Section>
+          <RequestServiceForm />
         </Section>
       </main>
     </>
   );
 };
 
-export default Home;
+export default Estimates;
 
 // const AuthShowcase: React.FC = () => {
 //   const { data: sessionData } = useSession();
