@@ -232,7 +232,7 @@ const RequestServiceForm = () => {
             }
             onBlur={(e) => handleBlur(e)}
             onFocus={(e) => handleFocus(e)}
-            type="tel"
+            type="email"
             className="h-9 rounded-md border border-secondary bg-white px-2 py-2 text-black"
           ></input>
           {errorMessages && errorMessages.emailError ? (
