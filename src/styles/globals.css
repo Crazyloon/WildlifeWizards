@@ -40,11 +40,11 @@
   --primary-dark-focus: hsl(275, 60%, 24%);
   --primary-dark-active: hsl(275, 75%, 26%);
 
-  --secondary: hsl(211, 80%, 16%);
-  --secondary-hover: hsl(211, 80%, 16%);
-  --secondary-focus: hsl(211, 80%, 16%);
-  --secondary-active: hsl(211, 80%, 16%);
-  --secondary-faded: hsla(211, 80%, 16%, 0.2);
+  --secondary: 211 67% 20%;
+  --secondary-hover: 211 74% 22%;
+  --secondary-focus: 211 80% 24%;
+  --secondary-active: 211 84% 26%;
+  --secondary-faded: hsla(211, 84%, 28%, 0.2);
 
   --secondary-dark: hsl(180, 50%, 18%);
   --secondary-dark-hover: hsl(180, 53%, 19%);
@@ -244,6 +244,10 @@ h6 {
 }
 .AccordionContent[data-state="closed"] {
   animation: slideUp 300ms ease-out;
+}
+
+.clip-top {
+  clip-path: inset(0px 0px -60px -60px);
 }
 
 @keyframes slideDown {

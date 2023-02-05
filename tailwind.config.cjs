@@ -69,10 +69,10 @@ module.exports = {
         "primary-dark-focus": "var(--primary-dark-focus)",
         "primary-dark-active": "var(--primary-dark-active)",
 
-        secondary: "var(--secondary)",
-        "secondary-hover": "var(--secondary-hover)",
-        "secondary-focus": "var(--secondary-focus)",
-        "secondary-active": "var(--secondary-active)",
+        secondary: "hsl(var(--secondary) / <alpha-value>)",
+        "secondary-hover": "hsl(var(--secondary-hover) / <alpha-value>)",
+        "secondary-focus": "hsl(var(--secondary-focus) / <alpha-value>)",
+        "secondary-active": "hsl(var(--secondary-active) / <alpha-value>)",
         "secondary-faded": "var(--secondary-faded)",
 
         "secondary-dark": "var(--secondary-dark)",
@@ -105,6 +105,9 @@ module.exports = {
         "error-hover": "var(--error-hover)",
         "error-focus": "var(--error-focus)",
         "error-active": "var(--error-active)",
+      },
+      boxShadow: {
+        "lg-left": "-5px 9px 20px 5px rgb(0 0 0 / 35%)",
       },
     },
   },

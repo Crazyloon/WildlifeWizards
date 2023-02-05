@@ -17,19 +17,15 @@ const Estimates: NextPage = () => {
       <Head>
         <title>Estimates - Animal Control</title>
       </Head>
-      <Hero />
       <main className="text-slate-800 dark:text-gray-200">
-        <Section className="flex flex-col items-center gap-2 py-12 dark:bg-slate-800">
-          <CallToAction
-            heading="Animal and Pest Control"
-            slogan="Making pests disappear, like magic!"
-          >
-            <TelephoneButton phoneNumber="+12068569699" />
-            <PhoneNumber phoneNumber="(206) 856-9699" />
-            <h5 className="mt-4 text-zinc-700 dark:text-zinc-300">
-              Now serving the Greater Puget Sound area.
-            </h5>
-          </CallToAction>
+        <Section className="flex flex-col bg-purple-800 p-4 text-center text-white">
+          <h1 className="mb-4 text-4xl sm:text-5xl lg:text-6xl">
+            Schedule an Estimate
+          </h1>
+          <p>
+            Fill out the form below, and we&apos;ll call you to schedule an
+            inspection.
+          </p>
         </Section>
         <Section>
           <RequestServiceForm />

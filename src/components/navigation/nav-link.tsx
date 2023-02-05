@@ -11,7 +11,7 @@ const NavLink = ({ url, text, active, className }: NavLinkType) => {
   return (
     <li
       className={`h-full ${
-        active ? "active bg-slate-900 text-white dark:bg-white/10" : ""
+        active ? "active bg-secondary text-white dark:bg-white/10" : ""
       }`}
     >
       <Link

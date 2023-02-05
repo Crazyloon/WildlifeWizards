@@ -14,7 +14,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="m-auto grid h-full max-w-[1280px] grid-cols-5 items-center justify-between">
+      <nav className="z-50 m-auto grid h-full max-w-[1280px] grid-cols-5 items-center justify-between">
         <div className="col-start-1 flex h-full w-full max-w-xs items-center justify-start px-2 lg:px-0">
           <NavBrandLink url="/" />
         </div>

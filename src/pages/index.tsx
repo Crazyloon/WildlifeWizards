@@ -27,7 +27,7 @@ const Home: NextPage = () => {
             </h5>
           </CallToAction>
         </Section>
-        <Section className="flex flex-col bg-purple-800 text-center text-white ">
+        <Section className="flex flex-col bg-purple-800 text-center text-white">
           <BusinessHours />
         </Section>
         <Section className="bg-gray-600 py-12 text-white">

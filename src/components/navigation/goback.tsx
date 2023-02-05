@@ -10,8 +10,11 @@ const GoBack = ({ className }: { className?: string }) => {
       }`}
       onClick={() => Router.back()}
     >
-      <FontAwesomeIcon className="mr-2" icon={faArrowLeftLong} />
-      <span className="hover-animate-underline text-sm">Go Back</span>
+      <FontAwesomeIcon
+        className="mr-2 h-5 w-5 sm:h-5 sm:w-5"
+        icon={faArrowLeftLong}
+      />
+      <span className="text-sm">Go Back</span>
     </button>
   );
 };
