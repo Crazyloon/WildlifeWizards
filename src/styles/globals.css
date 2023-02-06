@@ -12,21 +12,20 @@
   --shadow: #5c5c5c4d;
 
   --white: 0 0% 96%;
-  /* --white: hsl(0, 0%, 96%); */
   --black: 220 7% 8%;
 
-  --font-primary: hsl(221, 16%, 23%);
-  --font-secondary: hsl(211, 50%, 27%);
-  --background: hsl(69, 20%, 93%); /* traffic white */
+  --font-primary: 221 16% 23%;
+  --font-secondary: 211 50% 27%;
+  --background: 69 20% 93%; /* traffic white */
 
   --navbar: 277 31% 35%;
 
-  --link-color: hsl(45, 100%, 42%);
-  --link-color-hover: hsl(211, 80%, 16%);
-  --link-color-active: hsl(211, 80%, 16%);
-  --link-color-visited: hsl(45, 100%, 42%);
+  --link-color: 45 100% 42%;
+  --link-color-hover: 211 80% 16%;
+  --link-color-active: 211 80% 16%;
+  --link-color-visited: 45 100% 42%;
 
-  --link-text: var(--white);
+  --link-text: 0 0% 9%;
 
   --primary: 228 46% 37%;
   --primary-hover: 228 50% 40%;
@@ -35,10 +34,10 @@
   --primary-after: 228 46% 49%;
   --primary-faded: hsla(228, 46%, 49%, 0.7);
 
-  --primary-dark: hsl(275, 50%, 20%);
-  --primary-dark-hover: hsl(275, 55%, 22%);
-  --primary-dark-focus: hsl(275, 60%, 24%);
-  --primary-dark-active: hsl(275, 75%, 26%);
+  --primary-dark: 275 50% 20%;
+  --primary-dark-hover: 275 55% 22%;
+  --primary-dark-focus: 275 60% 24%;
+  --primary-dark-active: 275 75% 26%;
 
   --secondary: 211 67% 20%;
   --secondary-hover: 211 74% 22%;
@@ -46,50 +45,50 @@
   --secondary-active: 211 84% 26%;
   --secondary-faded: hsla(211, 84%, 28%, 0.2);
 
-  --secondary-dark: hsl(180, 50%, 18%);
-  --secondary-dark-hover: hsl(180, 53%, 19%);
-  --secondary-dark-focus: hsl(180, 55%, 20%);
-  --secondary-dark-active: hsl(180, 56%, 21%);
+  --secondary-dark: 180 50% 18%;
+  --secondary-dark-hover: 180 53% 19%;
+  --secondary-dark-focus: 180 55% 20%;
+  --secondary-dark-active: 180 56% 21%;
 
-  --accent: hsl(141, 60%, 25%);
-  --accent-hover: hsl(141, 70%, 28%);
-  --accent-focus: hsl(141, 80%, 31%);
-  --accent-active: hsl(141, 80%, 34%);
-  --accent-faded: hsl(141, 60%, 25%, 0.2);
+  --accent: 141 60% 25%;
+  --accent-hover: 141 70% 28%;
+  --accent-focus: 141 80% 31%;
+  --accent-active: 141 80% 34%;
+  --accent-faded: hsla(141, 60%, 25%, 0.2);
 
-  --success: hsl(111 40% 30%);
-  --success-hover: hsl(111, 42%, 32%);
-  --success-focus: hsl(111, 44%, 34%);
-  --success-active: hsl(111, 46%, 36%);
+  --success: 111 40% 30%;
+  --success-hover: 111 42% 32%;
+  --success-focus: 111 44% 34%;
+  --success-active: 111 46% 36%;
 
-  --info: hsl(214, 55%, 58%);
-  --info-hover: hsl(214, 60%, 54%);
-  --info-focus: hsl(214, 65%, 52%);
-  --info-active: hsl(214, 70%, 48%);
+  --info: 214 55% 58%;
+  --info-hover: 214 60% 54%;
+  --info-focus: 214 65% 52%;
+  --info-active: 214 70% 48%;
 
-  --warning: hsl(28, 65%, 58%);
-  --warning-hover: hsl(28, 70%, 56%);
-  --warning-focus: hsl(28, 75%, 54%);
-  --warning-active: hsl(28, 80%, 52%);
+  --warning: 28 65% 58%;
+  --warning-hover: 28 70% 56%;
+  --warning-focus: 28 75% 54%;
+  --warning-active: 28 80% 52%;
 
-  --error: hsl(0, 74%, 60%);
-  --error-hover: hsl(0, 76%, 58%);
-  --error-focus: hsl(0, 78%, 56%);
-  --error-active: hsl(0, 80%, 54%);
+  --error: 0 74% 60%;
+  --error-hover: 0 76% 58%;
+  --error-focus: 0 78% 56%;
+  --error-active: 0 80% 54%;
 }
 
 [data-theme="dark"] {
-  --font-primary: hsl(230, 20%, 80%);
-  --font-secondary: hsl(214, 28%, 66%);
+  --font-primary: 230 20% 80%;
+  --font-secondary: 214 28% 66%;
 
-  --background: hsl(216, 18%, 16%);
+  --background: 216 18% 16%;
   --navbar: 217 10% 25%;
 
-  --link-color: hsl(290, 100%, 85%);
-  --link-color-hover: hsl(228, 100%, 85%);
-  --link-color-active: hsl(204, 3%, 70%);
-  --link-color-visited: hsl(214, 42%, 48%);
-  --link-text: var(--font-primary);
+  --link-color: 290 100% 85%;
+  --link-color-hover: 228 100% 85%;
+  --link-color-active: 204 3% 70%;
+  --link-color-visited: 214 42% 48%;
+  --link-text: 230 20% 80%;
 
   --shadow: #b5b5b54d;
 
@@ -100,47 +99,47 @@
   --primary-after: 278 83% 36%;
   --primary-faded: 277 67% 40%;
 
-  --primary-dark: hsl(275, 50%, 20%);
-  --primary-dark-hover: hsl(275, 55%, 22%);
-  --primary-dark-focus: hsl(275, 60%, 24%);
-  --primary-dark-active: hsl(275, 75%, 26%);
+  --primary-dark: 275 50% 20%;
+  --primary-dark-hover: 275 55% 22%;
+  --primary-dark-focus: 275 60% 24%;
+  --primary-dark-active: 275 75% 26%;
 
-  --secondary: hsl(189, 100%, 21%);
-  --secondary-hover: hsl(189, 100%, 28%);
-  --secondary-focus: hsl(189, 90%, 30%);
-  --secondary-active: hsl(189, 80%, 32%);
+  --secondary: 189 100% 21%;
+  --secondary-hover: 189 100% 28%;
+  --secondary-focus: 189 90% 30%;
+  --secondary-active: 189 80% 32%;
   --secondary-faded: hsla(189, 70%, 26%, 0.2);
 
-  --secondary-dark: hsl(180, 50%, 18%);
-  --secondary-dark-hover: hsl(180, 53%, 19%);
-  --secondary-dark-focus: hsl(180, 55%, 20%);
-  --secondary-dark-active: hsl(180, 56%, 21%);
+  --secondary-dark: 180 50% 18%;
+  --secondary-dark-hover: 180 53% 19%;
+  --secondary-dark-focus: 180 55% 20%;
+  --secondary-dark-active: 180 56% 21%;
 
-  --accent: hsl(320, 50%, 50%);
-  --accent-hover: hsl(320, 60%, 52%);
-  --accent-focus: hsl(320, 70%, 54%);
-  --accent-active: hsl(320, 80%, 56%);
-  --accent-faded: hsl(320, 50%, 50%, 0.2);
+  --accent: 320 50% 50%;
+  --accent-hover: 320 60% 52%;
+  --accent-focus: 320 70% 54%;
+  --accent-active: 320 80% 56%;
+  --accent-faded: hsla(320, 50%, 50%, 0.2);
 
-  --success: hsl(111 40% 30%);
-  --success-hover: hsl(111, 42%, 32%);
-  --success-focus: hsl(111, 44%, 34%);
-  --success-active: hsl(111, 46%, 36%);
+  --success: 111 40% 30%;
+  --success-hover: 111 42% 32%;
+  --success-focus: 111 44% 34%;
+  --success-active: 111 46% 36%;
 
-  --info: hsl(214, 55%, 58%);
-  --info-hover: hsl(214, 60%, 54%);
-  --info-focus: hsl(214, 65%, 52%);
-  --info-active: hsl(214, 70%, 48%);
+  --info: 214 55% 58%;
+  --info-hover: 214 60% 54%;
+  --info-focus: 214 65% 52%;
+  --info-active: 214 70% 48%;
 
-  --warning: hsl(28, 65%, 58%);
-  --warning-hover: hsl(28, 75%, 56%);
-  --warning-focus: hsl(28, 85%, 54%);
-  --warning-active: hsl(28, 95%, 52%);
+  --warning: 28 65% 58%;
+  --warning-hover: 28 75% 56%;
+  --warning-focus: 28 85% 54%;
+  --warning-active: 28 95% 52%;
 
-  --error: hsl(0, 75%, 60%);
-  --error-hover: hsl(0, 80%, 55%);
-  --error-focus: hsl(0, 85%, 50%);
-  --error-active: hsl(0, 90%, 45%);
+  --error: 0 75% 60%;
+  --error-hover: 0 80% 55%;
+  --error-focus: 0 85% 50%;
+  --error-active: 0 90% 45%;
 }
 
 @font-face {
@@ -173,66 +172,77 @@
   font-weight: 900;
 }
 
-html {
-  font-size: 16px;
-}
+@layer base {
+  html {
+    font-size: 16px;
+  }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Averta", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-}
-a {
-  color: var(--link-color);
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Averta", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+      sans-serif;
+    line-height: 1.6;
+  }
 
-  text-decoration-line: none;
-  text-decoration-thickness: 1px;
-  text-decoration-style: solid;
-  text-decoration-color: inherit;
-}
-a:visited {
-  color: var(--link-color-visited);
-}
-a:hover {
-  color: var(--link-color-hover);
-  text-decoration-line: underline;
-}
+  a,
+  .dark a {
+    color: hsl(var(--link-color));
 
-a:hover:visited {
-  text-decoration-line: underline;
-}
+    text-decoration-line: none;
+    text-decoration-thickness: 1px;
+    text-decoration-style: solid;
+    text-decoration-color: inherit;
+  }
+  a:visited,
+  .dark a:visited {
+    color: hsl(var(--link-color-visited));
+  }
+  a:hover,
+  .dark a:hover {
+    color: hsl(var(--link-color-hover));
+    text-decoration-line: underline;
+  }
 
-a:focus {
-  color: var(--link-color-active);
-}
-a:active:focus {
-  color: var(--link-color-active);
-}
-h1 {
-  font-size: 3em;
-}
+  a:visited:hover,
+  .dark a:visited:hover {
+    color: hsl(var(--link-color-hover));
+    text-decoration-line: underline;
+  }
 
-h2 {
-  font-size: 2em;
-}
+  a:focus,
+  .dark a:focus {
+    color: var(--link-color-active);
+  }
+  a:active:focus,
+  .dark a:active:focus {
+    color: hsl(var(--link-color-active));
+  }
+  h1 {
+    font-size: 3em;
+  }
 
-h3 {
-  font-size: 1.5em;
-}
+  h2 {
+    font-size: 2em;
+  }
 
-h4 {
-  font-size: 1.25em;
-}
+  h3 {
+    font-size: 1.5em;
+  }
 
-h5 {
-  font-size: 1em;
-}
+  h4 {
+    font-size: 1.25em;
+  }
 
-h6 {
-  font-size: 0.5em;
+  h5 {
+    font-size: 1em;
+  }
+
+  h6 {
+    font-size: 0.5em;
+  }
 }
 
 /* Styling Required for Radix Components */

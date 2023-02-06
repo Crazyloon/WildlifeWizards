@@ -8,7 +8,7 @@ const OneByThree = () => {
       <h2 className="mb-8 text-center text-3xl text-white sm:text-4xl">
         Free of Pests in Three Easy Steps
       </h2>
-      <div className="mx-8 max-w-7xl dark:bg-gray-500 sm:mx-20 md:mx-32 lg:mx-auto">
+      <div className="mx-8 max-w-7xl bg-gray-500 sm:mx-20 md:mx-32 lg:mx-auto">
         <div className="m-auto grid gap-[1px] lg:grid-cols-3">
           <Step
             heading="Inspection"
