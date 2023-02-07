@@ -41,7 +41,7 @@ module.exports = {
         bounceLeft: "bounceLeft 1s infinite",
       },
       colors: {
-        white: "hsl(var(--white) / <alpha-value>)",
+        white: "hsl(var(--white)/ <alpha-value>)",
         black: "hsl(var(--black) / <alpha-value>)",
         "font-primary": "hsl(var(--font-primary) / <alpha-value>)",
         "font-secondary": "hsl(var(--font-secondary) / <alpha-value>)",
@@ -49,7 +49,6 @@ module.exports = {
 
         background: "hsl(var(--background) / <alpha-value>)",
         navbar: "hsl(var(--navbar) / <alpha-value>)",
-        // navbar: "hsl(var(--navbar) / <alpha-value>)",
 
         "link-color": "hsl(var(--link-color) / <alpha-value>)",
         "link-color-hover": "hsl(var(--link-color-hover) / <alpha-value>)",
@@ -116,3 +115,13 @@ module.exports = {
   },
   plugins: [],
 };
+
+function withOpacity(variableName) {
+  console.log(variableName);
+  return ({ opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `hsla(var(${variableName}), ${opacityValue})`;
+    }
+    return `hsl(var(${variableName}))`;
+  };
+}

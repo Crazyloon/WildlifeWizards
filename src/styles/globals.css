@@ -173,6 +173,28 @@
 }
 
 @layer base {
+  /* Firefox */
+  .scroll-view {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary-dark)) var(--primary);
+  }
+
+  /* Chrome, Edge, and Safari */
+  .scroll-view::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .scroll-view::-webkit-scrollbar-track {
+    background: hsl(var(--primary));
+    border-radius: 5px;
+  }
+
+  .scroll-view::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--primary-dark));
+    border-radius: 14px;
+    border: 3px solid hsl(var(--primary));
+  }
+
   html {
     font-size: 16px;
   }

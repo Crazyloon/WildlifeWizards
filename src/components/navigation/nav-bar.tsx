@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import ThemeSwitch from "./theme-switch";
