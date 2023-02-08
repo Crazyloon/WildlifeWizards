@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Section from "../components/structural/section";
-import Image from "next/image";
 import CritterCard from "../components/card/critter-card";
 
 const Wildlife = () => {
@@ -9,16 +8,16 @@ const Wildlife = () => {
       <Head>
         <title>Nuisance Wildlife - Animal Control</title>
       </Head>
+      <Section className="flex flex-col bg-purple-800 p-4 text-center text-white">
+        <h1 className="mb-4 text-4xl sm:text-5xl lg:text-6xl">
+          Nusiance Wildlife
+        </h1>
+      </Section>
       <main className="text-slate-800 dark:text-gray-200">
-        <Section className="flex flex-col bg-purple-800 p-4 text-center text-white">
-          <h1 className="mb-4 text-4xl sm:text-5xl lg:text-6xl">
-            Nusiance Wildlife
-          </h1>
-          <span className="text-center text-2xl sm:text-3xl">
-            The Usual Suspects
-          </span>
-        </Section>
         <Section className="mx-2 sm:mx-4">
+          <h2 className="mb-6 text-center text-2xl sm:text-3xl">
+            The Usual Suspects
+          </h2>
           <div className="m-auto grid max-w-4xl grid-cols-1 justify-center justify-items-center gap-4 xl:max-w-7xl xl:grid-cols-2">
             <CritterCard
               heading="Raccoons"

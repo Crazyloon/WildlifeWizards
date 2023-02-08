@@ -1,4 +1,4 @@
-import { FormEvent, useReducer, useState } from "react";
+import { type FormEvent, useReducer, useState } from "react";
 import { z } from "zod";
 
 const RequestServiceForm = () => {

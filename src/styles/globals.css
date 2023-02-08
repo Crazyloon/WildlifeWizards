@@ -242,6 +242,11 @@
   .dark a:active:focus {
     color: hsl(var(--link-color-active));
   }
+
+  .dark a.btn {
+    color: white;
+    text-decoration: none;
+  }
   h1 {
     font-size: 3em;
   }

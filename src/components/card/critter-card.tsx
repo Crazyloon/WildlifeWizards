@@ -22,7 +22,7 @@ const CritterCard = ({
           className="rounded-t-md md:rounded-bl-md md:rounded-tl-md md:rounded-tr-none"
         />
       </div>
-      <div className="row-start-2 h-full overflow-hidden rounded-b-md bg-primary py-2 px-4 text-white md:col-start-2 md:row-start-1 md:max-h-[336px] md:rounded-bl-none md:rounded-tr-md md:px-2">
+      <div className="row-start-2 h-full overflow-hidden rounded-b-md bg-purple-800 py-2 px-4 text-white md:col-start-2 md:row-start-1 md:max-h-[336px] md:rounded-bl-none md:rounded-tr-md md:px-2">
         <h3 className="text-white md:col-span-2 md:row-start-1">{heading}</h3>
         <p className="scroll-view max-h-[275px] overflow-auto rounded-b-md pt-2 md:rounded-bl-none xl:max-h-[250px]">
           {summary}
