@@ -8,7 +8,7 @@ const Section = ({
   className?: string;
 }) => {
   return (
-    <section className={`w-100 py-12 ${className ? className : ""}`}>
+    <section className={`w-full py-12 ${className ? className : ""}`}>
       {children}
     </section>
   );

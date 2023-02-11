@@ -14,7 +14,7 @@ const Wildlife = () => {
         </h1>
       </Section>
       <main className="text-slate-800 dark:text-gray-200">
-        <Section className="mx-2 sm:mx-4">
+        <Section className="mx-2 sm:mx-4 md:mx-auto">
           <h2 className="mb-6 text-center text-2xl sm:text-3xl">
             The Usual Suspects
           </h2>

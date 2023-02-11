@@ -26,9 +26,21 @@ const Estimates: NextPage = () => {
             Fill out the form below, and we&apos;ll call you to schedule an
             inspection.
           </p>
+          <p className="m-auto mt-4 w-10/12 border-t border-t-purple-400 pt-4 text-white/90 sm:w-2/3 md:text-sm lg:w-1/3">
+            Or skip the wait and call us today.
+          </p>
+          <PhoneNumber
+            phoneNumber="(206) 856-9699"
+            className="text-white/90 md:text-sm"
+          />
         </Section>
-        <Section>
-          <RequestServiceForm />
+        <Section className="xl:m-auto xl:grid xl:max-w-5xl xl:grid-cols-[3fr_2fr]">
+          <div className="w-full">
+            <RequestServiceForm />
+          </div>
+          <aside className="mt-6 hidden xl:block">
+            <BusinessHours lightBackground={true} includeSubHeading={false} />
+          </aside>
         </Section>
       </main>
     </>
