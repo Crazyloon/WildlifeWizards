@@ -16,23 +16,23 @@ const CritterCard = ({
   href?: string;
 }) => {
   return (
-    <div className="grid max-w-md grid-cols-1 items-center overflow-hidden rounded-sm shadow-lg md:max-w-2xl md:auto-rows-max md:grid-cols-2">
+    <div className="grid max-w-md grid-cols-1 items-center overflow-hidden rounded-sm bg-purple-800 shadow-lg md:max-w-2xl md:auto-rows-max md:grid-cols-2 xl:flex xl:grid-cols-1 xl:flex-col">
       <div className="relative flex aspect-square justify-center rounded-t-sm md:row-start-1 md:rounded-bl-md">
         <Image
           src={imgSrc}
           alt={imgAlt}
-          width={450}
-          height={450}
-          className="rounded-t-sm md:rounded-bl-sm md:rounded-tl-sm md:rounded-tr-none"
+          width={800}
+          height={800}
+          className="rounded-t-sm md:rounded-bl-sm md:rounded-tl-sm md:rounded-tr-none xl:rounded-bl-none"
         />
       </div>
       <div
-        className={`row-start-2 flex h-full flex-col overflow-hidden rounded-b-sm bg-purple-800 py-2 px-4 text-white md:col-start-2 md:row-start-1 md:max-h-[336px] md:rounded-bl-none md:rounded-tr-sm md:px-2 ${
+        className={`row-start-2 flex h-full flex-col overflow-hidden rounded-b-sm py-2 px-4 text-white md:col-start-2 md:row-start-1 md:rounded-bl-none md:rounded-tr-sm md:px-2 ${
           href ? "justify-between" : ""
         }`}
       >
         <h3 className="text-white md:col-span-2 md:row-start-1">{heading}</h3>
-        <p className="scroll-view max-h-[275px] overflow-auto rounded-b-sm pt-2 md:rounded-bl-none xl:max-h-[250px]">
+        <p className="scroll-view overflow-auto rounded-b-sm pt-2 md:rounded-bl-none">
           {summary}
         </p>
         {href ? (

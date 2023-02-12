@@ -14,7 +14,7 @@ const BusinessHours = ({
       {includeSubHeading ? (
         <SubHeading lightBackground={lightBackground} />
       ) : null}
-      <div className="mt-8 grid grid-cols-2 [&>*]:px-4 [&>:nth-child(even)]:text-left [&>:nth-child(odd)]:text-right">
+      <div className="mt-8 grid grid-cols-2 [&>:nth-child(even)]:pl-4 [&>:nth-child(even)]:text-left [&>:nth-child(odd)]:text-right">
         <span>Monday - Saturday:</span>
         <span>8:00AM – 6:30PM</span>
         <span>Sunday:</span>

@@ -18,7 +18,7 @@ const Wildlife = () => {
           <h2 className="mb-6 text-center text-2xl sm:text-3xl">
             The Usual Suspects
           </h2>
-          <div className="m-auto grid max-w-4xl grid-cols-1 justify-center justify-items-center gap-4 xl:max-w-7xl xl:grid-cols-2">
+          <div className="m-auto grid max-w-4xl grid-cols-1 justify-center justify-items-center gap-4 xl:max-w-4xl xl:grid-cols-2">
             <CritterCard
               heading="Raccoons"
               imgSrc="/raccoon.jpg"
