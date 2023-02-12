@@ -12,7 +12,7 @@ const Estimates: NextPage = () => {
         <title>Estimates - Animal Control</title>
       </Head>
       <main className="text-slate-800 dark:text-gray-200">
-        <Section className="flex flex-col bg-purple-800 p-4 py-6 text-center text-white">
+        <Section className="flex flex-col bg-purple-800 text-center text-white">
           <h1 className="mb-4 text-4xl sm:text-5xl lg:text-6xl">
             Schedule an Estimate
           </h1>

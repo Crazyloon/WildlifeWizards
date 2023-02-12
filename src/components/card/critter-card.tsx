@@ -21,8 +21,8 @@ const CritterCard = ({
         <Image
           src={imgSrc}
           alt={imgAlt}
-          width={800}
-          height={800}
+          width={600}
+          height={600}
           className="rounded-t-sm md:rounded-bl-sm md:rounded-tl-sm md:rounded-tr-none xl:rounded-bl-none"
         />
       </div>

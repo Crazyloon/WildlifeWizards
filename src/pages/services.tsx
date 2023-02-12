@@ -6,10 +6,10 @@ const Services = () => {
   return (
     <>
       <Head>
-        <title>Nuisance Wildlife - Animal Control</title>
+        <title>Animal Control Services</title>
       </Head>
-      <Section className="bg-purple-800">
-        <h1 className="text-center text-white">Our Services</h1>
+      <Section className="bg-purple-800 text-center text-white">
+        <h1 className="mb-4 text-4xl sm:text-5xl lg:text-6xl">Our Services</h1>
       </Section>
       <main className="text-slate-800 dark:text-gray-200">
         <Section className="text-font-primary dark:bg-slate-800 dark:text-font-primary">

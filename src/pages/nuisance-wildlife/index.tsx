@@ -8,14 +8,14 @@ const Wildlife = () => {
       <Head>
         <title>Nuisance Wildlife - Animal Control</title>
       </Head>
-      <Section className="flex flex-col bg-purple-800 p-4 text-center text-white">
+      <Section className="bg-purple-800 text-center text-white">
         <h1 className="mb-4 text-4xl sm:text-5xl lg:text-6xl">
           Nuisance Wildlife
         </h1>
       </Section>
       <main className="text-slate-800 dark:text-gray-200">
         <Section className="px-2 sm:px-4 md:mx-auto">
-          <div className="m-auto grid max-w-4xl grid-cols-1 justify-center justify-items-center gap-4 lg:max-w-7xl xl:grid-cols-3 2k:grid-cols-3">
+          <div className="m-auto grid max-w-4xl grid-cols-1 justify-center justify-items-center gap-4 lg:max-w-5xl xl:grid-cols-3 2k:max-w-7xl 4k:max-w-12xl 4k:grid-cols-5  uw:max-w-uw uw:grid-cols-8">
             <CritterCard
               heading="Raccoons"
               imgSrc="/raccoon.jpg"
@@ -109,7 +109,7 @@ const Wildlife = () => {
               heading="Bobcats"
               imgSrc="/bobcat.jpg"
               imgAlt="picture of a bobcat trapped in a net"
-              summary="Bobcats are more common than most people realize, but because of their elusive nature, they're rarely seen. While they don't frequently hunt household pets, they do occasionally and precaution should be taken if they're in your area. More commonly, they're responsible for the loss of many smaller farm animals, such as poultry, lambs, goats, and pigs."
+              summary="Bobcats are more common than most people realize, but because of their elusive nature, they're rarely seen. While they don't frequently hunt household pets, they do occasionally, so precautions should be taken if they live in your area. More commonly, they're responsible for the loss of many smaller farm animals, such as poultry, lambs, goats, and pigs."
             />
           </div>
         </Section>

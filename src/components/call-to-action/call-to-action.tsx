@@ -9,10 +9,10 @@ type CallToActionType = {
 const CallToAction = ({ heading, slogan, children }: CallToActionType) => {
   return (
     <>
-      <h1 className="mb-2 text-center text-4xl leading-tight sm:text-5xl">
+      <h1 className="mb-2 text-center text-4xl leading-tight sm:text-5xl lg:text-6xl">
         {heading}
       </h1>
-      <i className="text-lg text-zinc-800 dark:text-zinc-400">{slogan}</i>
+      <i className="text-lg text-font-primary">{slogan}</i>
       {children}
     </>
   );

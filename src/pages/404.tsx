@@ -17,7 +17,7 @@ export default function Custom404() {
           fill
         />
       </div>
-      <GoBack className="my-8 ml-8 flex items-center py-4 px-4 text-2xl" />
+      <GoBack className="mb-8 mt-8 ml-8 flex items-center py-4 px-4 text-2xl md:mt-0" />
     </main>
   );
 }

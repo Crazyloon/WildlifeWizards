@@ -8,6 +8,15 @@ module.exports = {
         xs: "451px",
         "2k": "1921px",
         "4k": "2561px",
+        uw: "4001px",
+      },
+      maxWidth: {
+        "8xl": "88rem",
+        "9xl": "96rem",
+        "10xl": "104rem",
+        "11xl": "112rem",
+        "12xl": "120rem",
+        uw: "200rem",
       },
       keyframes: {
         bounceRight: {
