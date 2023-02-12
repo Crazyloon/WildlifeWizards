@@ -40,12 +40,12 @@ const Navigation = () => {
           />
         </ul>
         <div className="col-start-5 flex h-full w-full items-center justify-end gap-4 pr-2">
-          <NavLink
+          {/* <NavLink
             className="hidden lg:flex"
             url="/login"
             text="Login"
             active={router.pathname === "/login"}
-          />
+          /> */}
           <ThemeSwitch display={menuOpen ? true : true} />
           <NavToggle
             isOpen={menuOpen}

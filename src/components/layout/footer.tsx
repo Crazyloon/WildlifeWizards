@@ -10,8 +10,8 @@ const Footer = () => {
           <Link href="/careers" className="py-1">
             <span className="w-full text-sm md:text-base">Careers</span>
           </Link>
-          <Link href="/team" className="py-1">
-            <span className="w-full text-sm md:text-base">Meet the Team</span>
+          <Link href="/crew" className="py-1">
+            <span className="w-full text-sm md:text-base">Meet the Crew</span>
           </Link>
           <Link href="/blog" className="py-1">
             <span className="w-full text-sm md:text-base">Blog</span>

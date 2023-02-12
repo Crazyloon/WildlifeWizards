@@ -36,12 +36,12 @@ const NavMenuFlyout = ({ isOpen, currentRoute }: NavMenuFlyoutType) => {
         active={currentRoute === "/estimates"}
         className="py-4 pr-8"
       />
-      <NavLink
+      {/* <NavLink
         url="/login"
         text="login"
         active={currentRoute === "/login"}
         className="py-4 pr-8"
-      />
+      /> */}
     </ul>
   );
 };

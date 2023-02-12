@@ -23,7 +23,7 @@
   --link-color: 45 100% 42%;
   --link-color-hover: 45 100% 46%;
   --link-color-active: 45 100% 38%;
-  --link-color-visited: 45 100% 42%;
+  --link-color-visited: 45 100% 38%;
 
   --link-text: 0 0% 9%;
 
@@ -85,9 +85,9 @@
   --navbar: 217 10% 25%;
 
   --link-color: 290 100% 85%;
-  --link-color-hover: 228 100% 85%;
-  --link-color-active: 204 3% 70%;
-  --link-color-visited: 45 100% 42%;
+  --link-color-hover: 313 100% 78%;
+  --link-color-active: 220 100% 80%;
+  --link-color-visited: 228 80% 85%;
   --link-text: 230 20% 80%;
 
   --shadow: #b5b5b54d;
@@ -250,27 +250,27 @@
     text-decoration: none;
   }
   h1 {
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   h4 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
   }
 
   h5 {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   h6 {
-    font-size: 0.5em;
+    font-size: 0.5rem;
   }
 }
 
