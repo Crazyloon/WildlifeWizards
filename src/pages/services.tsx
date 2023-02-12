@@ -12,7 +12,15 @@ const Services = () => {
         <h1 className="text-center text-white">Our Services</h1>
       </Section>
       <main className="text-slate-800 dark:text-gray-200">
-        <Section className="m-auto px-2 sm:px-4">
+        <Section className="text-font-primary dark:bg-slate-800 dark:text-font-primary">
+          <h2 className="mb-4 text-center">Wildlife Removal</h2>
+          <p className="mb-4 text-center">More information coming soon...</p>
+        </Section>
+        <Section className="bg-primary text-white dark:bg-secondary-dark dark:text-font-primary">
+          <h2 className="mb-4 text-center">Exclusion Services</h2>
+          <p className="mb-4 text-center">More information coming soon...</p>
+        </Section>
+        <Section className="m-auto bg-gray-600 px-2 text-white dark:bg-inherit sm:px-4">
           <h2 className="mb-4 text-center">Crawlspace Remediation</h2>
           <div className="flex max-w-4xl flex-col items-center gap-6 py-4 md:mx-auto lg:max-w-6xl lg:flex-row lg:items-stretch">
             <div className="m-auto flex basis-1/2 justify-end">
@@ -57,9 +65,9 @@ const Services = () => {
             </div>
           </div>
         </Section>
-        <Section className="bg-primary text-white dark:bg-slate-800 dark:text-font-primary">
+        <Section className="bg-primary text-white dark:bg-purple-900 dark:text-font-primary">
           <h2 className="mb-4 text-center">Attic Restoration</h2>
-          <p className="mb-4 text-center">Pictures coming soon...</p>
+          <p className="mb-4 text-center">More information coming soon...</p>
         </Section>
       </main>
     </>

@@ -1,11 +1,5 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-// import { signIn, signOut, useSession } from "next-auth/react";
-import TelephoneButton from "../components/button/telephone-button";
-import OneByThree from "../components/structural/one-by-three";
-import CallToAction from "../components/call-to-action/call-to-action";
-import Hero from "../components/call-to-action/hero";
-import FrequentlyAsked from "../components/faq/faq";
 import Section from "../components/structural/section";
 import PhoneNumber from "../components/call-to-action/phone-number";
 import BusinessHours from "../components/structural/business-hours";
@@ -34,13 +28,22 @@ const Estimates: NextPage = () => {
             className="text-white/90 md:text-sm"
           />
         </Section>
-        <Section className="xl:m-auto xl:grid xl:max-w-5xl xl:grid-cols-[3fr_2fr]">
+        <Section className="gap-2 xl:m-auto xl:grid xl:max-w-6xl xl:grid-cols-[3fr_2fr]">
           <div className="w-full">
             <RequestServiceForm />
           </div>
-          <aside className="mt-6 hidden xl:block">
-            <BusinessHours lightBackground={true} includeSubHeading={false} />
-          </aside>
+          <div className="mt-6 hidden flex-col xl:flex">
+            <aside className="">
+              <BusinessHours lightBackground={true} includeSubHeading={false} />
+            </aside>
+            <aside className="my-auto px-4">
+              Because every job has unique requirements, we can&apos;t offer
+              flat rates. Some situations can be quoted over the phone, but in
+              most cases, one of our professionals will travel to your location
+              to provide a through inspection and quote you for recommended
+              services.
+            </aside>
+          </div>
         </Section>
       </main>
     </>

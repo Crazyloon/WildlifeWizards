@@ -110,10 +110,11 @@
   --secondary-active: 189 80% 32%;
   --secondary-faded: hsla(189, 70%, 26%, 0.2);
 
-  --secondary-dark: 180 50% 18%;
-  --secondary-dark-hover: 180 53% 19%;
-  --secondary-dark-focus: 180 55% 20%;
-  --secondary-dark-active: 180 56% 21%;
+  --secondary-dark: 211 67% 20%;
+  --secondary-dark-hover: 211 74% 22%;
+  --secondary-dark-focus: 211 80% 24%;
+  --secondary-dark-active: 211 84% 26%;
+  --secondary-dark-faded: hsla(211, 84%, 28%, 0.2);
 
   --accent: 320 50% 50%;
   --accent-hover: 320 60% 52%;
