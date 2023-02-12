@@ -9,7 +9,7 @@ type NavToggleType = {
 };
 
 const NavToggle = ({ isOpen, setMenuOpen, icon }: NavToggleType) => {
-  const ref = useRef<HTMLDivElement>(null); // reference to the nav-toggle
+  const ref = useRef<HTMLButtonElement>(null); // reference to the nav-toggle
 
   useEffect(() => {
     function handleClick(event: MouseEvent) {
@@ -31,9 +31,10 @@ const NavToggle = ({ isOpen, setMenuOpen, icon }: NavToggleType) => {
   }, [isOpen, setMenuOpen]);
 
   return (
-    <div
+    <button
+      aria-roledescription="open and close menu"
       ref={ref}
-      className={`align-center text-link-text cursor-pointer justify-center text-xl ${
+      className={`align-center cursor-pointer justify-center text-xl text-link-text ${
         isOpen ? "float-none text-left" : "lg:hidden"
       }`}
       onClick={() => setMenuOpen(!isOpen)}
@@ -41,7 +42,7 @@ const NavToggle = ({ isOpen, setMenuOpen, icon }: NavToggleType) => {
       <div className="flex h-9 items-center px-3">
         <FontAwesomeIcon icon={icon} className="h-5 w-5" />
       </div>
-    </div>
+    </button>
   );
 };
 

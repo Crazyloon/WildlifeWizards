@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Section from "../components/structural/section";
-import CritterCard from "../components/card/critter-card";
+import Section from "../../components/structural/section";
+import CritterCard from "../../components/card/critter-card";
 
 const Wildlife = () => {
   return (
@@ -29,11 +29,12 @@ const Wildlife = () => {
                 cuddly, but don't be fooled. Their teeth are sharp and
                 their claws are fast, and these smart animals know where to
                 strike!"
+              href="/nuisance-wildlife/raccoons"
             />
             <CritterCard
-              heading="Squirlles"
-              imgSrc="/squirlle.jpg"
-              imgAlt="picture of a squirlle in a house"
+              heading="Squirrels"
+              imgSrc="/squirrel.jpg"
+              imgAlt="picture of a squirrel in a house"
               summary="These guys tend to stay up in attics, and are particularly fond
               of chewing on wires. We mainly have three varieties around here,
               those being the native Douglas, the invasive Grays, and the less
@@ -49,6 +50,7 @@ const Wildlife = () => {
               want to go anywhere else. Incredibly destructive if left
               unchecked, its best to deal with rat issues as quickly as
               possible."
+              href="/rats"
             />
             <CritterCard
               heading="Birds"

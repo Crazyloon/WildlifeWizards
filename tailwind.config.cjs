@@ -115,13 +115,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-function withOpacity(variableName) {
-  console.log(variableName);
-  return ({ opacityValue }) => {
-    if (opacityValue !== undefined) {
-      return `hsla(var(${variableName}), ${opacityValue})`;
-    }
-    return `hsl(var(${variableName}))`;
-  };
-}

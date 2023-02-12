@@ -25,15 +25,9 @@ const NavMenuFlyout = ({ isOpen, currentRoute }: NavMenuFlyoutType) => {
         className="py-4 pr-8"
       />
       <NavLink
-        url="/common-nuisance-wildlife"
-        text="common nuisance wildlife"
-        active={currentRoute === "/common-nuisance-wildlife"}
-        className="py-4 pr-8"
-      />
-      <NavLink
-        url="/contact"
-        text="contact"
-        active={currentRoute === "/contact"}
+        url="/nuisance-wildlife"
+        text="nuisance wildlife"
+        active={currentRoute === "/nuisance-wildlife"}
         className="py-4 pr-8"
       />
       <NavLink

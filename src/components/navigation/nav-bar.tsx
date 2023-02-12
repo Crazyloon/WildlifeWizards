@@ -29,14 +29,9 @@ const Navigation = () => {
             active={router.pathname === "/services"}
           />
           <NavLink
-            url="/common-nuisance-wildlife"
-            text="common nuisance wildlife"
-            active={router.pathname === "/common-nuisance-wildlife"}
-          />
-          <NavLink
-            url="/contact"
-            text="contact"
-            active={router.pathname === "/contact"}
+            url="/nuisance-wildlife"
+            text="nuisance wildlife"
+            active={router.pathname === "/nuisance-wildlife"}
           />
           <NavLink
             url="/estimates"
@@ -45,12 +40,12 @@ const Navigation = () => {
           />
         </ul>
         <div className="col-start-5 flex h-full w-full items-center justify-end gap-4 px-2 lg:px-0">
-          <NavLink
+          {/* <NavLink
             className="hidden lg:flex"
             url="/login"
             text="Login"
             active={router.pathname === "/login"}
-          />
+          /> */}
           <ThemeSwitch display={menuOpen ? true : true} />
           <NavToggle
             isOpen={menuOpen}

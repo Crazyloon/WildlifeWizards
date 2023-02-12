@@ -32,7 +32,8 @@ const ThemeSwitch = ({ display }: { display: boolean }) => {
   }, []);
 
   return (
-    <i
+    <button
+      aria-roledescription="color theme toggle"
       onClick={() => {
         handleThemeToggle();
       }}
@@ -53,7 +54,7 @@ const ThemeSwitch = ({ display }: { display: boolean }) => {
           />
         )}
       </div>
-    </i>
+    </button>
   );
 };
 

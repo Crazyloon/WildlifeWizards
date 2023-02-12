@@ -21,8 +21,8 @@
   --navbar: 277 31% 35%;
 
   --link-color: 45 100% 42%;
-  --link-color-hover: 211 80% 16%;
-  --link-color-active: 211 80% 16%;
+  --link-color-hover: 45 100% 46%;
+  --link-color-active: 45 100% 38%;
   --link-color-visited: 45 100% 42%;
 
   --link-text: 0 0% 9%;
@@ -207,6 +207,7 @@
       Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
       sans-serif;
     line-height: 1.6;
+    font-size: clamp(16px, 2vw, 24px);
   }
 
   a,
@@ -236,7 +237,7 @@
 
   a:focus,
   .dark a:focus {
-    color: var(--link-color-active);
+    color: hsl(var(--link-color-active));
   }
   a:active:focus,
   .dark a:active:focus {
