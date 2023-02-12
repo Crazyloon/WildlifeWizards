@@ -57,8 +57,9 @@ const Services = () => {
             </div>
           </div>
         </Section>
-        <Section>
+        <Section className="bg-primary text-white dark:bg-slate-800 dark:text-font-primary">
           <h2 className="mb-4 text-center">Attic Restoration</h2>
+          <p className="mb-4 text-center">Pictures coming soon...</p>
         </Section>
       </main>
     </>

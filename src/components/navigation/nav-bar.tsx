@@ -14,7 +14,7 @@ const Navigation = () => {
   return (
     <>
       <nav className="z-50 m-auto grid h-full grid-cols-5 items-center justify-between">
-        <div className="col-start-1 flex h-full w-full max-w-xs items-center justify-start px-2 lg:px-0">
+        <div className="col-start-1 flex h-full w-full max-w-xs items-center justify-start pl-2">
           <NavBrandLink url="/" />
         </div>
         <ul
@@ -39,7 +39,7 @@ const Navigation = () => {
             active={router.pathname === "/estimates"}
           />
         </ul>
-        <div className="col-start-5 flex h-full w-full items-center justify-end gap-4 px-2 lg:px-0">
+        <div className="col-start-5 flex h-full w-full items-center justify-end gap-4 pr-2">
           <NavLink
             className="hidden lg:flex"
             url="/login"
