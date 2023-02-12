@@ -87,7 +87,7 @@
   --link-color: 290 100% 85%;
   --link-color-hover: 228 100% 85%;
   --link-color-active: 204 3% 70%;
-  --link-color-visited: 214 42% 48%;
+  --link-color-visited: 45 100% 42%;
   --link-text: 230 20% 80%;
 
   --shadow: #b5b5b54d;
@@ -207,7 +207,7 @@
       Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
       sans-serif;
     line-height: 1.6;
-    font-size: clamp(16px, 2vw, 24px);
+    font-size: clamp(16px, 2vw, 20px);
   }
 
   a,

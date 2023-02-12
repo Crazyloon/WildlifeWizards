@@ -7,9 +7,7 @@ const PhoneNumber = ({
 }) => {
   return (
     <span
-      className={`text-center text-sm dark:text-white md:text-lg ${
-        className ? className : ""
-      }`}
+      className={`text-center dark:text-white ${className ? className : ""}`}
     >
       {phoneNumber}
     </span>

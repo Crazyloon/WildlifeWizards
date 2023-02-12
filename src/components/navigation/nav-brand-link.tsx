@@ -18,7 +18,7 @@ const NavBrandLink = ({ url }: NavBrandLinkType) => {
         height={64}
         alt="Company Logo. A racoon in wizards robes"
       />
-      <span className="ml-2 hidden whitespace-nowrap lg:inline-block">
+      <span className="ml-2 hidden whitespace-nowrap xl:inline-block">
         Wildlife Wizards
       </span>
     </Link>

@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             slogan="Making pests disappear, like magic!"
           >
             <TelephoneButton phoneNumber="+12068569699" />
-            <PhoneNumber phoneNumber="(206) 856-9699" />
+            <PhoneNumber phoneNumber="(206) 856-9699" className="text-lg" />
             <h5 className="mt-4 text-zinc-700 dark:text-zinc-300">
               Now serving the Greater Puget Sound area.
             </h5>

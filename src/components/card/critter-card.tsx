@@ -27,16 +27,14 @@ const CritterCard = ({
         />
       </div>
       <div
-        className={`row-start-2 flex h-full flex-col overflow-hidden rounded-b-sm py-2 px-4 text-white md:col-start-2 md:row-start-1 md:rounded-bl-none md:rounded-tr-sm md:px-2 ${
-          href ? "justify-between" : ""
-        }`}
+        className={`row-start-2 flex h-full flex-col overflow-hidden rounded-b-sm py-2 px-4 text-white md:col-start-2 md:row-start-1 md:rounded-bl-none md:rounded-tr-sm md:px-2`}
       >
         <h3 className="text-white md:col-span-2 md:row-start-1">{heading}</h3>
         <p className="scroll-view overflow-auto rounded-b-sm pt-2 md:rounded-bl-none">
           {summary}
         </p>
         {href ? (
-          <ReadMore className="self-end text-sm font-bold">
+          <ReadMore className="mt-auto self-end text-sm font-bold">
             <Link href={href}>Read More</Link>
           </ReadMore>
         ) : null}

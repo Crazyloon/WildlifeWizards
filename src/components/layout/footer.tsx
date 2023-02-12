@@ -1,34 +1,62 @@
+import Link from "next/link";
+
 const Footer = () => {
   const date: number = new Date().getFullYear();
   return (
     <>
-      <section className="m-auto grid w-full max-w-3xl grid-cols-4 gap-8 px-2 py-12 text-gray-800 dark:text-gray-400 md:px-14">
-        <div className="flex flex-col">
+      <section className="m-auto grid w-full max-w-3xl grid-cols-1 justify-items-center gap-8 py-10 px-4 text-gray-800 dark:text-gray-400 xs:grid-cols-2 sm:grid-cols-4">
+        <div className="flex w-full flex-col">
           <h4 className="bold mb-2 underline underline-offset-2">Company</h4>
-          <span className="text-sm">Careers</span>
-          <span className="text-sm">Meet the Team</span>
-          <span className="text-sm">Blog</span>
+          <Link href="/careers" className="py-1">
+            <span className="w-full text-sm md:text-base">Careers</span>
+          </Link>
+          <Link href="/team" className="py-1">
+            <span className="w-full text-sm md:text-base">Meet the Team</span>
+          </Link>
+          <Link href="/blog" className="py-1">
+            <span className="w-full text-sm md:text-base">Blog</span>
+          </Link>
         </div>
-        <div className="flex flex-col">
+        <div className="flex w-full flex-col">
           <h4 className="bold mb-2 underline underline-offset-2">Resources</h4>
-          <span className="text-sm">DIY</span>
-          <span className="text-sm">Common Creatures</span>
+          <Link href="/diy" className="py-1">
+            <span className="w-full text-sm md:text-base">DIY</span>
+          </Link>
+          <Link href="/localwildlife" className="py-1">
+            <span className="w-full text-sm md:text-base">Local Wildlife</span>
+          </Link>
         </div>
-        <div className="flex flex-col">
+        <div className="flex w-full flex-col">
           <h4 className="bold mb-2 underline underline-offset-2">Social</h4>
-          <span className="text-sm">Facebook</span>
-          <span className="text-sm">Twitter</span>
-          <span className="text-sm">Instagram</span>
-          <span className="text-sm">TikTok</span>
+          <Link href="/facebook" className="py-1">
+            <span className="w-full text-sm md:text-base">Facebook</span>
+          </Link>
+          <Link href="/twitter" className="py-1">
+            <span className="w-full text-sm md:text-base">Twitter</span>
+          </Link>
+          <Link href="/instagram" className="py-1">
+            <span className="w-full text-sm md:text-base">Instagram</span>
+          </Link>
+          <Link href="/tiktok" className="py-1">
+            <span className="w-full text-sm md:text-base">TikTok</span>
+          </Link>
         </div>
-        <div className="flex flex-col">
+        <div className="flex w-full flex-col">
           <h4 className="bold mb-2 underline underline-offset-2">Legal</h4>
-          <span className="text-sm">Privacy Statement</span>
-          <span className="text-sm">Cookies</span>
-          <span className="text-sm">Insurance</span>
+          <Link href="/privacy" className="py-1">
+            <span className="w-full text-sm md:text-base">
+              Privacy Statement
+            </span>
+          </Link>
+          <Link href="/cookies" className="py-1">
+            <span className="w-full text-sm md:text-base">Cookies</span>
+          </Link>
+          <Link href="/insurance" className="py-1">
+            <span className="w-full text-sm md:text-base">Insurance</span>
+          </Link>
         </div>
       </section>
-      <section className="mb-2 text-center text-sm capitalize text-gray-600">
+      <section className="pb-2 text-center text-sm capitalize text-gray-600">
         copyright © {date} wildlife wizards - all rights reserved
       </section>
     </>
