@@ -9,7 +9,7 @@ const NavBrandLink = ({ url }: NavBrandLinkType) => {
   return (
     <Link
       href={url}
-      className="flex items-center visited:text-link-color hover:text-link-color-hover dark:visited:text-link-color"
+      className="flex items-center visited:text-link-color hover:text-link-color-hover hover:no-underline dark:visited:text-link-color hover:dark:no-underline"
     >
       <Image
         className="h-[28px] w-[30px] lg:h-[45px] lg:w-[48px]"

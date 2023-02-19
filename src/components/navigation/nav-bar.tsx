@@ -5,7 +5,7 @@ import NavBrandLink from "./nav-brand-link";
 import { useRouter } from "next/router";
 import NavLink from "./nav-link";
 import NavToggle from "./nav-toggle";
-import NavMenuFlyout from "./nav-menu-flyout";
+import NaveMenuSlideOut from "./nav-menu-slideout";
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -54,7 +54,7 @@ const Navigation = () => {
           />
         </div>
       </nav>
-      <NavMenuFlyout isOpen={menuOpen} currentRoute={router.pathname} />
+      <NaveMenuSlideOut isOpen={menuOpen} currentRoute={router.pathname} />
     </>
   );
 };

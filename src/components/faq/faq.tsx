@@ -38,7 +38,7 @@ const FrequentlyAsked = () => {
             </p>
           </AccordionContent>
         </Accordion.Item>
-        <Accordion.Item value="q-2">
+        {/* <Accordion.Item value="q-2">
           <AccordionTrigger>Are you experienced?</AccordionTrigger>
           <AccordionContent>
             <p>
@@ -52,7 +52,7 @@ const FrequentlyAsked = () => {
               .
             </p>
           </AccordionContent>
-        </Accordion.Item>
+        </Accordion.Item> */}
         <Accordion.Item value="q-3">
           <AccordionTrigger>Where do you take the animals?</AccordionTrigger>
           <AccordionContent>
@@ -109,8 +109,8 @@ const FrequentlyAsked = () => {
           <AccordionContent>
             <p>
               While the laws in Washington State provide significant allowance
-              for citizens to resolve problems caused by wildlife. It can be
-              dangerous to handle wildlife without proper training and
+              for citizens to resolve problems caused by wildlife on their own,
+              It can be dangerous to handle wildlife without proper training and
               equipment. If you insist on dealing with nuisance animals on your
               own, please check out our <Link href={"/diy"}>DIY</Link> page for
               more information.
