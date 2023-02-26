@@ -1,42 +1,37 @@
-import NavLinkFlyout from "./nav-link-flyout";
+import NavLinkFlyout from "./nav-link-slideout";
+
+type NavData = {
+  url: string;
+  title: string;
+};
 
 type NaveMenuSlideOutType = {
   isOpen: boolean;
   currentRoute: string;
+  pages: NavData[];
 };
 
-const NaveMenuSlideOut = ({ isOpen, currentRoute }: NaveMenuSlideOutType) => {
+const NaveMenuSlideOut = ({
+  isOpen,
+  currentRoute,
+  pages,
+}: NaveMenuSlideOutType) => {
   return (
     <ul
-      className={`fixed left-0 z-10 max-h-0 w-full
-    justify-between overflow-hidden bg-background text-slate-900 transition-all duration-300 dark:text-white ${
+      className={`fixed left-0 z-10 max-h-0 w-full justify-between
+    overflow-hidden bg-background transition-all duration-300 md:hidden ${
       isOpen ? "h-fit max-h-64" : ""
     }`}
     >
-      <NavLinkFlyout
-        url="/"
-        text="home"
-        active={currentRoute === "/"}
-        className="py-4 px-5"
-      />
-      <NavLinkFlyout
-        url="/services"
-        text="services"
-        active={currentRoute === "/services"}
-        className="py-4 px-5"
-      />
-      <NavLinkFlyout
-        url="/nuisance-wildlife"
-        text="nuisance wildlife"
-        active={currentRoute === "/nuisance-wildlife"}
-        className="py-4 px-5"
-      />
-      <NavLinkFlyout
-        url="/estimates"
-        text="estimates"
-        active={currentRoute === "/estimates"}
-        className="py-4 px-5"
-      />
+      {pages.map((page) => (
+        <NavLinkFlyout
+          key={page.title}
+          url={page.url}
+          text={page.title}
+          active={currentRoute === page.url}
+          className="py-4 px-5"
+        />
+      ))}
       {/* <NavLinkFlyout
           url="/login"
           text="login"

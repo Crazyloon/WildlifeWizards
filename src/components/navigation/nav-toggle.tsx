@@ -35,7 +35,7 @@ const NavToggle = ({ isOpen, setMenuOpen, icon }: NavToggleType) => {
       aria-roledescription="open and close menu"
       ref={ref}
       className={`align-center cursor-pointer justify-center text-xl text-link-text ${
-        isOpen ? "float-none text-left" : "lg:hidden"
+        isOpen ? "float-none text-left" : "md:hidden"
       }`}
       onClick={() => setMenuOpen(!isOpen)}
     >

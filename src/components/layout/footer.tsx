@@ -8,51 +8,49 @@ const Footer = () => {
         <div className="flex w-full flex-col">
           <h4 className="bold mb-2 underline underline-offset-2">Company</h4>
           <Link href="/careers" className="py-1">
-            <span className="w-full text-sm md:text-base">Careers</span>
+            <span className="text-sm md:text-base">Careers</span>
           </Link>
           <Link href="/crew" className="py-1">
-            <span className="w-full text-sm md:text-base">Meet the Crew</span>
+            <span className="text-sm md:text-base">Meet the Crew</span>
           </Link>
           <Link href="/blog" className="py-1">
-            <span className="w-full text-sm md:text-base">Blog</span>
+            <span className="text-sm md:text-base">Blog</span>
           </Link>
         </div>
         <div className="flex w-full flex-col">
           <h4 className="bold mb-2 underline underline-offset-2">Resources</h4>
           <Link href="/diy" className="py-1">
-            <span className="w-full text-sm md:text-base">DIY</span>
+            <span className="text-sm md:text-base">DIY</span>
           </Link>
           <Link href="/localwildlife" className="py-1">
-            <span className="w-full text-sm md:text-base">Local Wildlife</span>
+            <span className="text-sm md:text-base">Local Wildlife</span>
           </Link>
         </div>
         <div className="flex w-full flex-col">
           <h4 className="bold mb-2 underline underline-offset-2">Social</h4>
           <Link href="/facebook" className="py-1">
-            <span className="w-full text-sm md:text-base">Facebook</span>
+            <span className="text-sm md:text-base">Facebook</span>
           </Link>
           <Link href="/twitter" className="py-1">
-            <span className="w-full text-sm md:text-base">Twitter</span>
+            <span className="text-sm md:text-base">Twitter</span>
           </Link>
           <Link href="/instagram" className="py-1">
-            <span className="w-full text-sm md:text-base">Instagram</span>
+            <span className="text-sm md:text-base">Instagram</span>
           </Link>
           <Link href="/tiktok" className="py-1">
-            <span className="w-full text-sm md:text-base">TikTok</span>
+            <span className="text-sm md:text-base">TikTok</span>
           </Link>
         </div>
         <div className="flex w-full flex-col">
           <h4 className="bold mb-2 underline underline-offset-2">Legal</h4>
           <Link href="/privacy" className="py-1">
-            <span className="w-full text-sm md:text-base">
-              Privacy Statement
-            </span>
+            <span className="text-sm md:text-base">Privacy Statement</span>
           </Link>
           <Link href="/cookies" className="py-1">
-            <span className="w-full text-sm md:text-base">Cookies</span>
+            <span className="text-sm md:text-base">Cookies</span>
           </Link>
           <Link href="/insurance" className="py-1">
-            <span className="w-full text-sm md:text-base">Insurance</span>
+            <span className="text-sm md:text-base">Insurance</span>
           </Link>
         </div>
       </section>

@@ -50,7 +50,7 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
           <Navigation />
         </header>
         <div className="">{children}</div>
-        <footer className="mt-auto w-full bg-neutral-300 text-slate-800 dark:bg-neutral-800 dark:text-white">
+        <footer className="mt-auto w-full bg-neutral-200 text-slate-800 dark:bg-neutral-800 dark:text-white">
           <Footer />
         </footer>
       </div>

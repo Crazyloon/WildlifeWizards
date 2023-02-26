@@ -10,8 +10,10 @@ type NavLinkFlyoutType = {
 const NavLinkFlyout = ({ url, text, active, className }: NavLinkFlyoutType) => {
   return (
     <li
-      className={`flex list-none ${
-        active ? "active bg-secondary text-white dark:bg-white/10" : ""
+      className={`flex list-none hover:bg-secondary/95 dark:hover:bg-white/20 ${
+        active
+          ? "active bg-secondary text-white no-underline dark:bg-white/10"
+          : ""
       }`}
     >
       <Link

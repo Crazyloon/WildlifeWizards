@@ -156,9 +156,9 @@ const RequestServiceForm = () => {
             className="h-9 rounded-md border border-secondary bg-white px-2 py-2 text-black"
           ></input>
           {errorMessages && errorMessages.fNameError ? (
-            <div className="w-full text-red-600 dark:text-red-500">
+            <span className="block w-full text-sm text-red-600 dark:text-red-500">
               {errorMessages.fNameError}
-            </div>
+            </span>
           ) : null}
         </div>
         <div className="row-start-2 my-2 flex w-full flex-col">
@@ -184,7 +184,7 @@ const RequestServiceForm = () => {
             className="h-9 rounded-md border border-secondary bg-white px-2 py-2 text-black"
           ></input>
           {errorMessages && errorMessages.lNameError ? (
-            <div className="w-full text-red-600 dark:text-red-500">
+            <div className="block w-full text-sm text-red-600 dark:text-red-500">
               {errorMessages.lNameError}
             </div>
           ) : null}
@@ -212,7 +212,7 @@ const RequestServiceForm = () => {
             className="h-9 rounded-md border border-secondary bg-white px-2 py-2 text-black"
           ></input>
           {errorMessages && errorMessages.phoneError ? (
-            <div className="w-full text-red-600 dark:text-red-500">
+            <div className="block w-full text-sm text-red-600 dark:text-red-500">
               {errorMessages.phoneError}
             </div>
           ) : null}
@@ -236,7 +236,7 @@ const RequestServiceForm = () => {
             className="h-9 rounded-md border border-secondary bg-white px-2 py-2 text-black"
           ></input>
           {errorMessages && errorMessages.emailError ? (
-            <div className="w-full text-red-600 dark:text-red-500">
+            <div className="block w-full text-sm text-red-600 dark:text-red-500">
               {errorMessages.emailError}
             </div>
           ) : null}
@@ -260,7 +260,7 @@ const RequestServiceForm = () => {
             className="h-9 rounded-md border border-secondary bg-white px-2 py-2 text-black"
           ></input>
           {errorMessages && errorMessages.addressError ? (
-            <div className="w-full text-red-600 dark:text-red-500">
+            <div className="block w-full text-sm text-red-600 dark:text-red-500">
               {errorMessages.addressError}
             </div>
           ) : null}
@@ -283,7 +283,7 @@ const RequestServiceForm = () => {
             className="h-36 rounded-md border border-secondary bg-white px-2 py-2 text-black sm:h-24"
           ></textarea>
           {errorMessages && errorMessages.commentError ? (
-            <div className="w-full text-red-600 dark:text-red-500">
+            <div className="block w-full text-sm text-red-600 dark:text-red-500">
               {errorMessages.commentError}
             </div>
           ) : null}
@@ -294,7 +294,7 @@ const RequestServiceForm = () => {
           </div>
         ) : null}
         <div className="row-start-8 mt-2">
-          <button className="w-full rounded-md bg-primary px-8 py-4 text-white hover:bg-primary-hover dark:bg-primary dark:hover:bg-primary-hover">
+          <button className="w-full rounded-md bg-primary px-8 py-4 text-white hover:bg-primary-hover focus:bg-primary-focus active:bg-primary-active dark:bg-primary dark:hover:bg-primary-hover dark:focus:bg-primary-focus dark:active:bg-primary-active">
             Submit
           </button>
         </div>

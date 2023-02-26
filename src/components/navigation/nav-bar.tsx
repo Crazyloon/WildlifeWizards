@@ -7,6 +7,25 @@ import NavLink from "./nav-link";
 import NavToggle from "./nav-toggle";
 import NaveMenuSlideOut from "./nav-menu-slideout";
 
+const navLinks = [
+  {
+    title: "services",
+    url: "/services",
+  },
+  {
+    title: "nuisance-wildlife",
+    url: "/nuisance-wildlife",
+  },
+  {
+    title: "estimates",
+    url: "/estimates",
+  },
+  {
+    title: "about",
+    url: "/about",
+  },
+];
+
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
@@ -18,28 +37,20 @@ const Navigation = () => {
           <NavBrandLink url="/" />
         </div>
         <ul
-          className={`col-span-3 col-start-2 hidden h-full w-full justify-center px-2 lg:flex ${
+          className={`col-span-3 col-start-2 hidden h-full w-full justify-center px-2 md:flex ${
             menuOpen ? "flex overflow-visible" : ""
           }`}
         >
-          <NavLink url="/" text="home" active={router.pathname === "/"} />
-          <NavLink
-            url="/services"
-            text="services"
-            active={router.pathname === "/services"}
-          />
-          <NavLink
-            url="/nuisance-wildlife"
-            text="nuisance wildlife"
-            active={router.pathname === "/nuisance-wildlife"}
-          />
-          <NavLink
-            url="/estimates"
-            text="estimates"
-            active={router.pathname === "/estimates"}
-          />
+          {navLinks.map((page) => (
+            <NavLink
+              key={page.title}
+              url={page.url}
+              text={page.title}
+              active={router.pathname === page.url}
+            />
+          ))}
         </ul>
-        <div className="col-start-5 flex h-full w-full items-center justify-end gap-4 pr-2">
+        <div className="col-start-5 flex h-full w-full items-center justify-end gap-4 lg:pr-2">
           {/* <NavLink
             className="hidden lg:flex"
             url="/login"
@@ -54,7 +65,11 @@ const Navigation = () => {
           />
         </div>
       </nav>
-      <NaveMenuSlideOut isOpen={menuOpen} currentRoute={router.pathname} />
+      <NaveMenuSlideOut
+        pages={navLinks}
+        isOpen={menuOpen}
+        currentRoute={router.pathname}
+      />
     </>
   );
 };
