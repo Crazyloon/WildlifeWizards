@@ -27,7 +27,7 @@ const BusinessHours = ({
 const SubHeading = ({ lightBackground = false }) => {
   return (
     <i
-      className={`block text-center text-lg ${
+      className={`block text-center ${
         lightBackground ? "text-font-primary" : "text-gray-300"
       }`}
     >
