@@ -35,7 +35,10 @@ const Footer = () => {
         </div>
         <div className="flex w-full flex-col">
           <h4 className="bold mb-2 underline underline-offset-2">Social</h4>
-          <Link href="/facebook" className="pb-1">
+          <Link
+            href="https://www.facebook.com/104878209063126"
+            className="pb-1"
+          >
             <span className="text-sm md:text-base">Facebook</span>
           </Link>
           <Link href="/twitter" className="pb-1">
