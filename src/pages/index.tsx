@@ -1,5 +1,4 @@
 import { type NextPage } from "next";
-import Head from "next/head";
 // import { signIn, signOut, useSession } from "next-auth/react";
 import TelephoneButton from "../components/button/telephone-button";
 import OneByThree from "../components/structural/one-by-three";
@@ -16,10 +15,7 @@ const Home: NextPage = () => {
       <Hero />
       <main className="text-slate-800 dark:text-gray-200">
         <Section className="flex flex-col items-center gap-2 py-12 dark:bg-slate-800">
-          <CallToAction
-            heading="Animal and Pest Control"
-            slogan="Making pests disappear, like magic!"
-          >
+          <CallToAction heading="Animal and Pest Control">
             <TelephoneButton phoneNumber="+12068569699" />
             <PhoneNumber phoneNumber="(206) 856-9699" className="text-lg" />
             <h5 className="mt-4 text-zinc-700 dark:text-zinc-300">

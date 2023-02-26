@@ -11,12 +11,10 @@ const Services = () => {
       <Section className="m-auto bg-purple-800 text-center text-white">
         <h1 className="mb-4 text-4xl sm:text-5xl lg:text-6xl">Our Services</h1>
         <p className="m-auto mb-4 max-w-xl px-5 md:px-5">
-          We offer a wide range of services to address different types of
-          wildlife problems. These services include inspection and assessment of
-          the situation, humane trapping and removal of the animals, and sealing
-          of entry points to prevent future invasions. We also provide cleanup
-          and restoration of damaged areas, as well as preventive measures to
-          avoid future wildlife problems.
+          We offer a wide range of services to address different wildlife
+          situations. These services include inspection and assessment, humane
+          trapping and removal, exclusion of entry, cleanup and restoration, and
+          preventive measures to avoid future wildlife problems.
         </p>
       </Section>
       <main>

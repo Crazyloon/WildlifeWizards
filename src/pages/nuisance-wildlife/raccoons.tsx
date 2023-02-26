@@ -86,8 +86,8 @@ const Raccoons = () => {
         <article className="m-auto flex max-w-5xl flex-col justify-center gap-6 px-4 md:flex-row xl:max-w-7xl">
           <div className="self-center">
             <Image
-              src="/raccoon_box.jpg"
-              alt="raccoon babies in a box"
+              src="/raccoon_trapped.jpg"
+              alt="raccoon captured in a trap, ready for relocation"
               width={400}
               height={600}
               className="aspect-[2/3]"

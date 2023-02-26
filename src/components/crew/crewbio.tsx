@@ -25,20 +25,15 @@ const CrewBio = ({
           ))}
         </ul>
         <h3>Bio</h3>
-        <p>
-          Leif is a handyman by trade and by hobby. When he&apos;s not in his
-          garage tinkering on one project or another you&apos;ll either find him
-          swimming in a nearby lake, or hanging out with his house-trained pig,
-          Randy.
-        </p>
+        <p>{bio}</p>
       </div>
 
       <div className="col-span-2 row-start-2 place-self-center md:col-span-1 md:row-span-2 md:row-start-1 md:max-w-sm">
         <Image
-          src="/crew_ceo.png"
+          src={imgSrc}
           width={400}
           height={600}
-          alt="Leif Pedersen - Founder & CEO"
+          alt={imgAlt}
           className="rounded-sm border-2 border-purple-800"
         />
       </div>

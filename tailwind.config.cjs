@@ -18,6 +18,9 @@ module.exports = {
         "12xl": "120rem",
         uw: "200rem",
       },
+      fontFamily: {
+        'brand': ['Cinzel Decorative'],
+      },
       keyframes: {
         bounceRight: {
           "0%, 100%": {

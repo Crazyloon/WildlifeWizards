@@ -24,7 +24,7 @@ const NavLink = ({ url, text, active, className }: NavLinkType) => {
             : "dark:visited:text-link-color"
         } ${className ? className : ""}`}
       >
-        {text}
+        <span>{text}</span>
       </Link>
     </li>
   );

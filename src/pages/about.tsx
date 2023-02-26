@@ -10,7 +10,7 @@ const About = () => {
       <Section className="bg-purple-800 text-center text-white">
         <h1>About Us</h1>
       </Section>
-      <Section>
+      <Section className="px-2">
         <div className="m-auto max-w-xl">
           <h2>Quick Facts</h2>
           <div className="mb-5 inline-grid grid-cols-[auto_auto] gap-x-4 text-gray-700 dark:text-gray-300 [&>:nth-child(odd)]:text-right">

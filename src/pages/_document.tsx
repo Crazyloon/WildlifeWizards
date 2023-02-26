@@ -3,7 +3,14 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <body>
         <script dangerouslySetInnerHTML={{ __html: initializeTheme }}></script>
         <Main />
@@ -14,11 +21,11 @@ export default function Document() {
 }
 
 const initializeTheme = `(function() {
-  ${setInitalColorMode.toString()}
-  setInitalColorMode();
+  ${setInitialColorMode.toString()}
+  setInitialColorMode();
 })()`;
 
-function setInitalColorMode() {
+function setInitialColorMode() {
   function getInitialColorMode() {
     const persistedColorPreference = window.localStorage.getItem("theme");
     const hasPersistedPreference = typeof persistedColorPreference === "string";
@@ -32,12 +39,7 @@ function setInitalColorMode() {
     // If they haven't been explicit, let's check the media query
     const preference = window.matchMedia("(prefers-color-scheme: dark)");
     const hasMediaQueryPreference = typeof preference.matches === "boolean";
-    console.log(
-      persistedColorPreference,
-      hasPersistedPreference,
-      preference,
-      hasMediaQueryPreference
-    );
+
     if (hasMediaQueryPreference) {
       return preference.matches ? "dark" : "light";
     }

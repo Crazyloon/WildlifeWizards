@@ -47,7 +47,6 @@ const Wildlife = () => {
               want to go anywhere else. Incredibly destructive if left
               unchecked, its best to deal with rat issues as quickly as
               possible."
-              href="/rats"
             />
             <CritterCard
               heading="Birds"
