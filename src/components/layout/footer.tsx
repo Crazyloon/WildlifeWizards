@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <div className="m-auto max-w-3xl px-4 pt-10 text-gray-800 dark:text-gray-400">
-        <Link href={"/"} className="hover:no-underline">
+        <Link href={"/"} className="hover:no-underline dark:hover:no-underline">
           <span className="bg-gradient-to-br from-[#9d15d8] to-[#5f00a9] bg-clip-text font-brand text-2xl text-transparent dark:from-[#d36bff] dark:to-[#b350ff]">
             Wildlife Wizards
           </span>
