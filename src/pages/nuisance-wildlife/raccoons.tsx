@@ -19,7 +19,7 @@ const Raccoons = () => {
             ></Image>
           </div>
           <div className="md:max-w-md">
-            <h3 className="text-white">Trouble Known by Many Names</h3>
+            <h3 className="dark:text-white">Trouble Known by Many Names</h3>
             <p className="mb-4 dark:text-stone-300">
               Racoons are known by many names, such as the trash panda, and the
               common city bear. They are notorious for finding their way into
@@ -46,7 +46,7 @@ const Raccoons = () => {
         </article>
         <article className="md:flex-row-revers m-auto flex max-w-5xl flex-col-reverse justify-center gap-6 px-4 md:flex-row xl:max-w-7xl">
           <div className="md:max-w-md">
-            <h3 className="text-white">Don&apos;t Be Fooled</h3>
+            <h3 className="dark:text-white">Don&apos;t Be Fooled</h3>
             <p className="mb-4 dark:text-stone-300">
               They will play cute to get what they want, staring at you with doe
               eyes, begging you for a handout. You must avoid doing so, as it
@@ -94,7 +94,7 @@ const Raccoons = () => {
             ></Image>
           </div>
           <div className="md:max-w-md">
-            <h3 className="text-white">Proper Removal</h3>
+            <h3 className="dark:text-white">Proper Removal</h3>
             <p className="mb-4 dark:text-stone-300">
               Do not attempt to trap racoons on your own, unless you are
               prepared to deal with them the right way. Washington State laws
